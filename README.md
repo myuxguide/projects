@@ -1,2 +1,4 @@
 # projects
-Angular Cypress Project
+Project Practices for...
+Angular js
+Node js
