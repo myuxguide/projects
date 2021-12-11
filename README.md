@@ -1,4 +1,2 @@
 # projects
-Project Practices for...
-Angular js
-Node js
+Project Practices for...User Interface & other high-end technologies 
