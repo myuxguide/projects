@@ -1,9 +1,5 @@
-# projects
-Project Practices for...User Interface & other high-end technologies 
+### Ngx-Admin Angular 8 application from akveo.com
 
-# Open Cypress
-1) npx cypress open
-2) node_modules/.bin/cypress open
+This is modified and more lightweight version of original application to practice UI Automation with Cypress.
 
-# Run Cypress as a dry run
-npx cypress run --headless 
+The original repo is here: https://github.com/akveo/ngx-admin
