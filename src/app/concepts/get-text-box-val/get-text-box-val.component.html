@@ -1,0 +1,5 @@
+<h3>Angular: Get TextBox Value</h3>
+<!-- <input type="text" name="userName" (keyup)="getInputValues($event)" /> -->
+<input type="text" name="userName" #box  class="TextBox mr-2"/>
+<button class="btn btn-sm btn-primary ml-2" (click)=getVal(box.value)>{{btnName}}</button>
+<p>{{ currentVal }}</p>

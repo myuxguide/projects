@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InterpolationComponent implements OnInit {
   // Simple String Interpolation
-  title = 'Iterpolation Title'
+  title = 'Iterpolation'
 
   // Calculation Interpolation
   public calcs_A = 5
@@ -24,9 +24,8 @@ export class InterpolationComponent implements OnInit {
 
   // Print Array
   arrayTest=[
-    10,20,3,7,9
+    10,20,3,7,9,"String Value"
   ]
-
 
   constructor() { }
 
