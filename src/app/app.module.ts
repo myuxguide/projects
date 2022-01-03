@@ -3,6 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ConceptsModule } from './concepts/concepts.module';
+
+// Custom Modules
+import { UsersListModule } from './user-list/user-list.module';
+
 
 @NgModule({
   declarations: [
@@ -10,7 +15,9 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    UsersListModule,
+    ConceptsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
