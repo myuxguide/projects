@@ -6,6 +6,7 @@ import { GetTextBoxValComponent } from './get-text-box-val/get-text-box-val.comp
 import { FormsModule } from '@angular/forms';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { NgIfComponent } from './ng-if/ng-if.component';
+import { RoutingBasicsComponent } from './routing-basics/routing-basics.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NgIfComponent } from './ng-if/ng-if.component';
     GetTextBoxValComponent,
     PropertyBindingComponent,
     PropertyBindingComponent,
-    NgIfComponent
+    NgIfComponent,
+    RoutingBasicsComponent
   ],
   imports: [
     CommonModule,
@@ -25,7 +27,8 @@ import { NgIfComponent } from './ng-if/ng-if.component';
     ClickEventsComponent,
     InterpolationComponent,
     PropertyBindingComponent,
-    NgIfComponent
+    NgIfComponent,
+    RoutingBasicsComponent
   ]
 })
 export class ConceptsModule {}
