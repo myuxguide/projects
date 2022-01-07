@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { NgIfComponent } from './ng-if/ng-if.component';
 import { RoutingBasicsComponent } from './routing-basics/routing-basics.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -14,21 +15,22 @@ import { RoutingBasicsComponent } from './routing-basics/routing-basics.componen
     ClickEventsComponent,
     GetTextBoxValComponent,
     PropertyBindingComponent,
-    PropertyBindingComponent,
     NgIfComponent,
-    RoutingBasicsComponent
+    RoutingBasicsComponent,
+    DashboardComponent
   ],
   imports: [
     CommonModule,
     FormsModule
   ],
   exports:[
-    GetTextBoxValComponent,
-    ClickEventsComponent,
     InterpolationComponent,
+    ClickEventsComponent,
+    GetTextBoxValComponent,
     PropertyBindingComponent,
     NgIfComponent,
-    RoutingBasicsComponent
+    RoutingBasicsComponent,
+    DashboardComponent
   ]
 })
 export class ConceptsModule {}
