@@ -5,8 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ConceptsModule } from './concepts/concepts.module';
 
+
+
 // Custom Modules
 import { UsersListModule } from './user-list/user-list.module';
+import { CypressPractModule } from './cypress-pract/cypress-pract.module';
+
 
 
 @NgModule({
@@ -17,7 +21,8 @@ import { UsersListModule } from './user-list/user-list.module';
     BrowserModule,
     AppRoutingModule,
     UsersListModule,
-    ConceptsModule
+    ConceptsModule,
+    CypressPractModule
   ],
   providers: [],
   bootstrap: [AppComponent]

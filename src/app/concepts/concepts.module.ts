@@ -4,12 +4,17 @@ import { InterpolationComponent } from './interpolation/interpolation.component'
 import { ClickEventsComponent } from './click-events/click-events.component';
 import { GetTextBoxValComponent } from './get-text-box-val/get-text-box-val.component';
 import { FormsModule } from '@angular/forms';
+import { PropertyBindingComponent } from './property-binding/property-binding.component';
+import { NgIfComponent } from './ng-if/ng-if.component';
 
 @NgModule({
   declarations: [
     InterpolationComponent,
     ClickEventsComponent,
-    GetTextBoxValComponent
+    GetTextBoxValComponent,
+    PropertyBindingComponent,
+    PropertyBindingComponent,
+    NgIfComponent
   ],
   imports: [
     CommonModule,
@@ -18,7 +23,9 @@ import { FormsModule } from '@angular/forms';
   exports:[
     GetTextBoxValComponent,
     ClickEventsComponent,
-    InterpolationComponent
+    InterpolationComponent,
+    PropertyBindingComponent,
+    NgIfComponent
   ]
 })
 export class ConceptsModule {}
