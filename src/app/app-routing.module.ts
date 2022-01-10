@@ -10,7 +10,10 @@ import { DashboardComponent } from './concepts/dashboard/dashboard.component';
 
 const routes: Routes = [
   {
-    path: 'dashboard',
+    path: '',   redirectTo: 'dashboard', pathMatch: 'full', // redirect to `first-component`
+  },
+  {
+    path: 'dashboard',    
     component: DashboardComponent
   },
   {
