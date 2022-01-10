@@ -2,19 +2,49 @@
     <h3>{{ title }}</h3>
     <ol>
         <li>
-            <strong>Change in File</strong>
+            <strong>Required Changes in Files</strong>
             <ol>
-                <li>module file</li>
-                <li>component.ts file</li>
-                <li>component.html file</li>
+                <li>component.html file [simple-forms.component.html]
+                    <ul>
+                        <li>Write HTML form</li>                        
+                    </ul>
+                </li>
+
+                <li>component.ts file [i.e. simple-forms.component.ts]
+                    <ul>
+                        <li>import form builder and get value</li>
+                    </ul>
+                </li>
+
+                <li>module file [i.e reactive-concepts.module.ts]
+                    <ul>
+                        <li>Import reactive form</li>
+                    </ul>
+                </li>
             </ol>
         </li>
-
-        <li>Write HTML form</li>
-        <li>Import reactive form</li>
-        <li>import form builder and get value</li>
     </ol>
-
+    
     <hr />
+
+    <!-- Create HTML for Forms -->
+    <h3>Example: Reactive Form</h3>
+    <form action="" [formGroup]="userInfo" (ngSubmit)="onSubmit(userInfo.value)">
+        <p>
+            <input type="text" formControlName="user" #getName placeholder="Enter Name" />
+        </p>
+        
+        <p>
+            <input type="text" formControlName="addr" #getAddr placeholder="Enter Address" />
+        </p>
+        
+        <p>
+            <button type="submit" class="btn btn-primary" (click)="getValue(getName.value, getAddr.value)">Submit</button>
+        </p>
+
+        <p>
+            Hi, I am {{ nameVal}} from {{ addrVal }}
+        </p>
+    </form>
 
 </div>
