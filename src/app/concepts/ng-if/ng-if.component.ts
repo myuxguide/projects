@@ -10,6 +10,9 @@ export class NgIfComponent implements OnInit {
   showMe:boolean = true
   showMe2:boolean = true
   showMe3:boolean = true
+
+  subTitle: any = "Youtube"
+  name:string = "Google"
   
 
   constructor() { }
