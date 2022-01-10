@@ -1,9 +1,28 @@
 <div class="mainSection">
-    <h3>*ngIf in Angular</h3>
+    <h3>{{ title }}</h3>
     <ul>
         <li>This is 'directive' in Angular</li>
         <li>used in HTML page directly</li>
     </ul>
 
     <hr />
+
+    <h3>if statement</h3>
+    <p *ngIf="showMe">
+        Hello Jimish
+    </p>
+
+    <h3>if block using ng-template</h3>    
+    <p *ngIf="showMe3; then ifBlock else elseBlock2">
+        Hello Jimish in If Block
+    </p>
+    <ng-template #ifBlock></ng-template>
+    <ng-template #elseBlock2></ng-template>
+
+
+    <h3>else block using ng-temppate</h3>    
+    <p *ngIf="showMe2 else elseBlock">
+        Hello Jimish in Else Block
+    </p>
+    <ng-template #elseBlock></ng-template>
 </div>

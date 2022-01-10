@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ng-if.component.css']
 })
 export class NgIfComponent implements OnInit {
+  title:string = "*ngIf in Angular"
+  showMe:boolean = true
+  showMe2:boolean = true
+  showMe3:boolean = true
+  
 
   constructor() { }
 
