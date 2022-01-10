@@ -10,6 +10,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { NgSwitchComponent } from './concepts/ng-switch/ng-switch.component'
 import { NgForLoopComponent } from './concepts/ng-for-loop/ng-for-loop.component';
 import { SimpleFormsComponent } from './concepts/reactiveConcepts/simple-forms/simple-forms.component';
+import { FormValidationsComponent } from './concepts/reactiveConcepts/form-validations/form-validations.component';
 
 
 const routes: Routes = [
@@ -57,6 +58,10 @@ const routes: Routes = [
   {
     path:'app-simple-forms',
     component: SimpleFormsComponent
+  },
+  {
+    path: 'app-form-validations',
+    component: FormValidationsComponent
   }
 ];
 

@@ -11,8 +11,6 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { UsersListModule } from './user-list/user-list.module';
 import { CypressPractModule } from './cypress-pract/cypress-pract.module';
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
