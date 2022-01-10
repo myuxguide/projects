@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
+
 
 @Component({
   selector: 'app-form-validations',
@@ -6,10 +8,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./form-validations.component.css']
 })
 export class FormValidationsComponent implements OnInit {
+  title: string = "Angular Form Validations"
+  userInfo:any
+  nameVal = ""
+  addrVal = ""
 
-  constructor() { }
+  constructor(private myFormBuilder: FormBuilder) {
+    this.userInfo = this.myFormBuilder.group({
+      user:'',
+      addr:''
+    })
+  }
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  OnSubmit(myValues: any){
+    console.warn("Form Submitted", myValues);
+  }
+
+  getValue(nameVal:any, addrVal:any){
+    this.nameVal = nameVal
+    this.addrVal = addrVal
   }
 
 }

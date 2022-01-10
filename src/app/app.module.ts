@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+// Custom Modules & Component
 import { ConceptsModule } from './concepts/concepts.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 

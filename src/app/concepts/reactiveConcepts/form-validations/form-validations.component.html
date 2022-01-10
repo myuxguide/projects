@@ -1,1 +1,23 @@
-<p>form-validations works!</p>
+<div class="mainSection">
+    <h3>{{ title }}</h3>
+
+    <!-- Create HTML for Forms -->
+    <form [formGroup]="userInfo" (ngSubmit)="userInfo.value" (ngSubmit)="OnSubmit(userInfo.value)">
+        <p>
+            <input type="text" formControlName="user" placeholder="Enter Name" #getName />
+        </p>
+
+        <p>
+            <input type="text" formControlName="addr" placeholder="Enter Address" #getAddr />
+        </p>
+
+        <p>
+            <button class="btn btn-primary" type="submit" (click)="getValue(getName.value, getAddr.value)">Submit</button>
+        </p>
+            This is {{ nameVal }} from {{ addrVal }}
+        <p>
+
+        </p>
+    </form>
+
+</div>

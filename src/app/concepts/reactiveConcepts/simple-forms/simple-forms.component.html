@@ -29,7 +29,7 @@
 
     <!-- Create HTML for Forms -->
     <h3>Example: Reactive Form</h3>
-    <form action="" [formGroup]="userInfo" (ngSubmit)="onSubmit(userInfo.value)">
+    <form [formGroup]="userInfo" (ngSubmit)="onSubmit(userInfo.value)">
         <p>
             <input type="text" formControlName="user" #getName placeholder="Enter Name" />
         </p>
@@ -43,7 +43,7 @@
         </p>
 
         <p>
-            Hi, I am {{ nameVal}} from {{ addrVal }}
+            This is {{ nameVal}} from {{ addrVal }}
         </p>
     </form>
 
