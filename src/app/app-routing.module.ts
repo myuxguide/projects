@@ -6,7 +6,10 @@ import { InterpolationComponent } from './concepts/interpolation/interpolation.c
 import { NgIfComponent } from './concepts/ng-if/ng-if.component';
 import { PropertyBindingComponent } from './concepts/property-binding/property-binding.component';
 import { RoutingBasicsComponent } from './concepts/routing-basics/routing-basics.component';
-import { DashboardComponent } from './concepts/dashboard/dashboard.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { NgSwitchComponent } from './concepts/ng-switch/ng-switch.component'
+import { NgForLoopComponent } from './concepts/ng-for-loop/ng-for-loop.component';
+
 
 const routes: Routes = [
   {
@@ -31,6 +34,14 @@ const routes: Routes = [
   {
     path: 'ng-if',
     component: NgIfComponent
+  },
+  {
+    path: 'ng-switch',
+    component: NgSwitchComponent
+  },
+  {
+    path: 'ng-for-loop',
+    component: NgForLoopComponent
   },
   {
     path: 'property-binding',

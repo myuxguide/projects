@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ConceptsModule } from './concepts/concepts.module';
-
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 // Custom Modules
@@ -15,7 +15,8 @@ import { CypressPractModule } from './cypress-pract/cypress-pract.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

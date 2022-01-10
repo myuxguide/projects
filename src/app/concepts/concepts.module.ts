@@ -7,7 +7,8 @@ import { FormsModule } from '@angular/forms';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { NgIfComponent } from './ng-if/ng-if.component';
 import { RoutingBasicsComponent } from './routing-basics/routing-basics.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { NgSwitchComponent } from './ng-switch/ng-switch.component';
+import { NgForLoopComponent } from './ng-for-loop/ng-for-loop.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     PropertyBindingComponent,
     NgIfComponent,
     RoutingBasicsComponent,
-    DashboardComponent
+    NgSwitchComponent,
+    NgForLoopComponent
   ],
   imports: [
     CommonModule,
@@ -29,8 +31,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     GetTextBoxValComponent,
     PropertyBindingComponent,
     NgIfComponent,
+    NgSwitchComponent,
     RoutingBasicsComponent,
-    DashboardComponent
+    NgForLoopComponent
   ]
 })
 export class ConceptsModule {}
