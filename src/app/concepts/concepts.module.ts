@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveConceptsModule } from './reactiveConcepts/reactive-concepts.module';
+
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { ClickEventsComponent } from './click-events/click-events.component';
 import { GetTextBoxValComponent } from './get-text-box-val/get-text-box-val.component';
@@ -9,6 +11,8 @@ import { NgIfComponent } from './ng-if/ng-if.component';
 import { RoutingBasicsComponent } from './routing-basics/routing-basics.component';
 import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import { NgForLoopComponent } from './ng-for-loop/ng-for-loop.component';
+
+
 
 @NgModule({
   declarations: [
@@ -23,7 +27,8 @@ import { NgForLoopComponent } from './ng-for-loop/ng-for-loop.component';
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    ReactiveConceptsModule
   ],
   exports:[
     InterpolationComponent,

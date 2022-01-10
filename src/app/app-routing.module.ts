@@ -9,11 +9,14 @@ import { RoutingBasicsComponent } from './concepts/routing-basics/routing-basics
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NgSwitchComponent } from './concepts/ng-switch/ng-switch.component'
 import { NgForLoopComponent } from './concepts/ng-for-loop/ng-for-loop.component';
+import { SimpleFormsComponent } from './concepts/reactiveConcepts/simple-forms/simple-forms.component';
 
 
 const routes: Routes = [
   {
-    path: '',   redirectTo: 'dashboard', pathMatch: 'full', // redirect to `first-component`
+    path: '',
+    redirectTo: 'dashboard',
+    pathMatch: 'full', // redirect to `first-component`
   },
   {
     path: 'dashboard',    
@@ -50,6 +53,10 @@ const routes: Routes = [
   {
     path: 'routing-basics',
     component: RoutingBasicsComponent
+  },
+  {
+    path:'app-simple-forms',
+    component: SimpleFormsComponent
   }
 ];
 
