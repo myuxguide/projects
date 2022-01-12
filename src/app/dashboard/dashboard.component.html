@@ -6,7 +6,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header border" id="flush-headingOne">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                <h5>{{ titles.titleOne }}</h5>
+                <h5 class="mb-0">{{ titles.titleOne }}</h5>
             </button>
           </h2>
           <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlush">
@@ -55,7 +55,7 @@
         <div class="accordion-item">
             <h2 class="accordion-header border" id="flush-headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    <h5>{{ titles.titleTwo }}</h5>
+                    <h5 class="mb-0">{{ titles.titleTwo }}</h5>
                 </button>
           </h2>
           <div id="flush-collapseTwo" class="accordion-collapse collapse hide" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlush">
@@ -115,13 +115,48 @@
                                         &nbsp; "src/**/*.d.ts"<br />
                                     ]
                                 </code>
-
                             </li>
                         </ol>
                     </li>
-                    <li><code>.browserslistsrc</code></li>
-                    <li><code>karma.config.js</code></li>
-                    <li><code>polyfills.ts</code></li>
+                    <li><code>.browserslistrc</code>
+                        <ol type="a">
+                            <li>Contains all the supported browser details as below <br />
+                                <strong>Command to check Browser Lists</strong>
+                                <code>
+                                    [npx browserslist] <br />
+                                    last 1 Chrome version
+                                    last 1 Firefox version
+                                    last 2 Edge major versions
+                                    last 2 Safari major versions
+                                    last 2 iOS major versions
+                                    Firefox ESR
+                                </code>
+                            </li>
+                        </ol>
+                    </li>
+                    <li><code>karma.conf.js</code>
+                        <ol type="a">
+                            <li>Contains test file configuration</li>
+                            <li>Shows that which browser, libraries needs to be load</li>
+                            <li>Shows the path details, port details</li>
+                        </ol>
+                    </li>
+                    <li><code>polyfills.ts</code>
+                        <ol type="a">
+                            <li>Very important File</li>
+                            <li>This file includes polyfills needed by Angular and is loaded before the app</li>
+                            <li>This file is divided into 2 sections
+                                <ol type="i">
+                                    <li>Browser polyfills. These are applied before loading ZoneJS and are sorted by browsers</li>
+                                    <li>Application imports. Files imported after ZoneJS that should be loaded before your main file.</li>
+                                    <li>
+                                        <strong>Refer Link: </strong> <br />
+                                        <a href="https://angular.io/guide/browser-support" target="_blank"><code>https://angular.io/guide/browser-support</code></a>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
                 </ol>
             </div>
           </div>
@@ -130,7 +165,7 @@
         <div class="accordion-item">
             <h2 class="accordion-header border" id="flush-headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    <h5>{{ titles.titleFour }}</h5>
+                    <h5 class="mb-0">{{ titles.titleFour }}</h5>
                 </button>
           </h2>
           <div id="flush-collapseThree" class="accordion-collapse collapse hide" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlush">

@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./get-text-box-val.component.css']
 })
 export class GetTextBoxValComponent implements OnInit {
+  title:string = "Required Changes in Files"
   currentVal = "";
   btnName = "Get Value";
 

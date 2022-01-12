@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
   titles = {
-    title: 'Dashboard',
+    title: 'BhoooBhoooooom',
     titleOne: "Angular v12 Learning Agenda",
     titleTwo: "Angular: Folder Structure",
     titleThree: "Angular Folder: Advanced user",
