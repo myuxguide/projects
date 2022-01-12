@@ -6,8 +6,3 @@ ul,li{
 .mainSection{
     padding: 1em;
 }
-.section{
-    max-height: 250px;
-    overflow-y: scroll;
-    width: 50%;
-}

@@ -6,9 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-  title: string = 'Dashboard'
-  subTitleOne: string = "Angular-12 Learning Agenda"
-  subTitleTwo: string = 'Suggested Links'
+  titles = {
+    title: 'Dashboard',
+    titleOne: "Angular-12 Learning Agenda",
+    titleTwo: "Angular Folder: Structure beginners",
+    titleThree: "Angular Folder: Advanced user",
+    titleFour: 'Suggested Links'
+  }
+  
 
   constructor() { }
 

@@ -1,52 +1,136 @@
 <div class="mainSection container">
-    <h3>{{ title }}</h3>
+    <h3>{{ titles.title }}</h3>
     <hr />
 
-    <div class="section">
-        <h5>{{ subTitleOne }}</h5>
-        <strong>Need to focus on below topics</strong>
-        <ol>
-            <li>Required steps & suggestions for Installation</li>
+    <div class="row row-cols-1 row-cols-sm-2 g-3">
+        <div class="col">
+            <div class="card p-2 overflow-auto">
+                <h5>{{ titles.titleOne }}</h5>
+                <hr />
+                <strong>Need to focus on below topics</strong>
                 <ol>
-                    <li>
-                        Install Node and NPM: LTS versions only
-                    </li>
-                    <li>
-                        <strong><i>Install Angulat CLI:</i></strong> <br /> 
-                        npm install -g @angular/cli
-                    </li>
-                    <li>
-                        <strong>Create Angular App:</strong> <br />
-                        ng new myAppName <br />
-                        cd myAppName <br />
-                        ng serve or <br />
-                        npm run start
-                    </li>
-                    <li>Interview Questions</li>
+                    <li>Required steps & suggestions for Installation</li>
+                    <ol>
+                        <li>
+                            Install Node and NPM: LTS versions only
+                        </li>
+                        <li>
+                            <strong><i>Install Angular CLI:</i></strong> <br />
+                            <code>npm install -g @angular/cli</code>
+                        </li>
+                        <li>
+                            <strong><i>Install specific Angular CLI</i></strong> <br />
+                            <code>Example...</code> <br />
+                            <code>npm install -g @angular/cli@10.0.0</code>
+                        </li>
+                        <li>
+                            <strong>Create Angular App:</strong> <br />
+                            <code>ng new myAppName</code> <br />
+                            <code>cd myAppName</code> <br />
+                            <code>ng serve</code> <br /> or <br />
+                            <code>npm run start</code>
+                        </li>
+                        <li>Interview Questions</li>
+                    </ol>
+                    <li>Structure</li>
+                    <li>Basic</li>
+                    <li>MVC</li>
+                    <li>Advance</li>
+                    <li>Routing</li>
+                    <li>API</li>
+                    <li>Forms</li>
+                    <li>Interview: How to crack Interview</li>
+                    <li>Project</li>
+                    <li>Wahst's new in Angular 12</li>
+                    <li>How to use CSS</li>
                 </ol>
-            <li>Structure</li>
-            <li>Basic</li>
-            <li>MVC</li>
-            <li>Advance</li>
-            <li>Routing</li>
-            <li>API</li>
-            <li>Forms</li>
-            <li>Interview: How to crack Interview</li>
-            <li>Project</li>
-            <li>Wahst's new in Angular 12</li>
-            <li>How to use CSS</li>
-        </ol>
-    </div>
+            </div>
+        </div>
 
-    <hr />
+        <div class="col">
+            <div class="card p-2 overflow-auto">
+                <h5>{{ titles.titleTwo }}</h5>
+                <hr />
+                <strong>For Beginners</strong>
+                <ol>
+                    <li><code>package.json</code></li>
+                    <li><code>node_modules</code></li>
+                    <li><code>src</code></li>
+                    <ol>
+                        <li><code>app</code></li>
+                        <li><code>assets</code></li>
+                        <li><code>environments</code></li>
+                        <li><code>index.html</code></li>
+                        <li><code>main.ts</code>
+                            <ol>
+                                <li>Use connect/Bootstrap html and angular application</li>
+                            </ol>
+                        </li>
+                        <li><code>style.css</code></li>
+                    </ol>
+                </ol>
 
-    <div class="section">
-        <h5>{{ subTitleTwo }}</h5>
-        <nav class="nav flex-column">
-            <ol>
-                <li><a class="nav-link active" href="https://www.itsolutionstuff.com/post/angular-9-create-module-with-routing-exampleexample.html" target="_blank">Angular Ref</a></li>
-                <li><a class="nav-link active" href="https://bootstrap-cheatsheet.themeselection.com/#bg-gradient" target="_blank">HTML 5 cheat sheet</a></li>
-            </ol>
-        </nav>
+                <hr />
+
+                <strong>For Advanced Use</strong>
+                <ol>
+                    <li><code>package-lock.json</code>
+                        <ol>
+                            <li>Keep the details of each package, which required dependencies</li>
+                        </ol>
+                    </li>
+                    <li><code>angular.json</code></li>
+                    <li><code>tsconfig.json</code>
+                        <ol>
+                            <li>Is handles Global Configurations</li>
+                            <li>Typescript configuration files</li>
+                            <li>Targets ecmascripts versions, which needs to be target</li>
+                        </ol>
+                    </li>
+                    <li><code>tsconfig.app.json</code>
+                        <ol>
+                            <li>Is handle Typescript Application Configuration</li>
+                        </ol>
+                    <li><code>tsconfig.spec.json</code>
+                        <ol>
+                            <li>Is handles Test Configurations</li>
+                            <li>We can includes new files as well <br />
+                                <code>
+                                    <strong>Example:</strong> <br />
+                                    "files": [<br />
+                                        &nbsp; "src/test.ts",<br />
+                                        &nbsp; "src/polyfills.ts"<br />
+                                    ],<br />
+                                    "include":[<br />
+                                        &nbsp; "src/**/*.spec.ts", <br />
+                                        &nbsp; "src/**/*.d.ts"<br />
+                                    ]
+                                </code>
+
+                            </li>
+                        </ol>
+                    </li>
+                    <li><code>.browserslistsrc</code></li>
+                    <li><code>karma.config.js</code></li>
+                    <li><code>polyfills.ts</code></li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card p-2 overflow-auto">
+                <h5>{{ titles.titleFour }}</h5>
+                <hr />
+                <nav class="nav flex-column">
+                    <ol>
+                        <li><a class="nav-link active"
+                                href="https://www.itsolutionstuff.com/post/angular-9-create-module-with-routing-exampleexample.html"
+                                target="_blank">Angular Ref</a></li>
+                        <li><a class="nav-link active" href="https://bootstrap-cheatsheet.themeselection.com/#bg-gradient"
+                                target="_blank">HTML 5 cheat sheet</a></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
     </div>
 </div>
