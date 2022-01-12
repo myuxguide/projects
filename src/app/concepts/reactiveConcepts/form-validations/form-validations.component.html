@@ -1,22 +1,55 @@
 <div class="mainSection">
     <h3>{{ title }}</h3>
+    <hr />
+    <div class="section">
+        <strong>Required Changes in Files</strong>
+        <ol>
+            <li>                
+                <ol>
+                    <li>component.html file [simple-forms.component.html]
+                        <ul>
+                            <li>Write HTML form</li>
+                            <li>Add Error Messages in HTML Form elements</li> 
+                            <li>For error message use if condition, that if faile than error message shlould be displayed</li>
+                        </ul>
+                    </li>
+
+                    <li>component.ts file [i.e. simple-forms.component.ts]
+                        <ul>                        
+                            <li>import form builder and get value</li>
+                            <li>import validator</li>
+                        </ul>
+                    </li>
+                </ol>
+            </li>
+
+            <li>Add Validation Code</li>
+
+            <li>Add Validation Message</li>
+        </ol>
+    </div>
+
+    <hr />
 
     <!-- Create HTML for Forms -->
     <form [formGroup]="userInfo" (ngSubmit)="userInfo.value" (ngSubmit)="OnSubmit(userInfo.value)">
-        <p>
-            <input type="text" formControlName="user" placeholder="Enter Name" #getName />
-        </p>
+        <div class="pb-2">
+            <input id="getName" type="text" formControlName="user" placeholder="Enter Name" #getName />
+            <div *ngIf="getName.oninvalid">
+                Invalid User
+            </div>
+        </div>
 
-        <p>
+        <div class="pb-2">
             <input type="text" formControlName="addr" placeholder="Enter Address" #getAddr />
-        </p>
+        </div>
 
-        <p>
+        <div class="pb-2">
             <button class="btn btn-primary" type="submit" (click)="getValue(getName.value, getAddr.value)">Submit</button>
-        </p>
-            This is {{ nameVal }} from {{ addrVal }}
-        <p>
+        </div>
 
+        <p>
+            This is {{ nameVal }} from {{ addrVal }}
         </p>
     </form>
 

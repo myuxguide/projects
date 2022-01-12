@@ -1,11 +1,52 @@
-<div class="mainSection">
+<div class="mainSection container">
     <h3>{{ title }}</h3>
+    <hr />
 
-    <h5>{{ subTitle }}</h5>
-    <nav class="nav flex-column">
+    <div class="section">
+        <h5>{{ subTitleOne }}</h5>
+        <strong>Need to focus on below topics</strong>
         <ol>
-            <li><a class="nav-link active" href="https://www.itsolutionstuff.com/post/angular-9-create-module-with-routing-exampleexample.html" target="_blank">Angular Ref</a></li>
-            <li><a class="nav-link active" href="https://bootstrap-cheatsheet.themeselection.com/#bg-gradient" target="_blank">HTML 5 cheat sheet</a></li>
+            <li>Required steps & suggestions for Installation</li>
+                <ol>
+                    <li>
+                        Install Node and NPM: LTS versions only
+                    </li>
+                    <li>
+                        <strong><i>Install Angulat CLI:</i></strong> <br /> 
+                        npm install -g @angular/cli
+                    </li>
+                    <li>
+                        <strong>Create Angular App:</strong> <br />
+                        ng new myAppName <br />
+                        cd myAppName <br />
+                        ng serve or <br />
+                        npm run start
+                    </li>
+                    <li>Interview Questions</li>
+                </ol>
+            <li>Structure</li>
+            <li>Basic</li>
+            <li>MVC</li>
+            <li>Advance</li>
+            <li>Routing</li>
+            <li>API</li>
+            <li>Forms</li>
+            <li>Interview: How to crack Interview</li>
+            <li>Project</li>
+            <li>Wahst's new in Angular 12</li>
+            <li>How to use CSS</li>
         </ol>
-    </nav>
+    </div>
+
+    <hr />
+
+    <div class="section">
+        <h5>{{ subTitleTwo }}</h5>
+        <nav class="nav flex-column">
+            <ol>
+                <li><a class="nav-link active" href="https://www.itsolutionstuff.com/post/angular-9-create-module-with-routing-exampleexample.html" target="_blank">Angular Ref</a></li>
+                <li><a class="nav-link active" href="https://bootstrap-cheatsheet.themeselection.com/#bg-gradient" target="_blank">HTML 5 cheat sheet</a></li>
+            </ol>
+        </nav>
+    </div>
 </div>

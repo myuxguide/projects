@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
-
+import { FormBuilder, Validators, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-form-validations',
@@ -10,8 +9,8 @@ import { FormBuilder } from '@angular/forms';
 export class FormValidationsComponent implements OnInit {
   title: string = "Angular Form Validations"
   userInfo:any
-  nameVal = ""
-  addrVal = ""
+  nameVal = ['', Validators.required]
+  addrVal = ['', Validators.required, Validators.minLength(5)]
 
   constructor(private myFormBuilder: FormBuilder) {
     this.userInfo = this.myFormBuilder.group({
