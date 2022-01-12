@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class DashboardComponent implements OnInit {
   titles = {
     title: 'Dashboard',
-    titleOne: "Angular-12 Learning Agenda",
-    titleTwo: "Angular Folder: Structure beginners",
+    titleOne: "Angular v12 Learning Agenda",
+    titleTwo: "Angular: Folder Structure",
     titleThree: "Angular Folder: Advanced user",
     titleFour: 'Suggested Links'
   }

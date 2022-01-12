@@ -2,15 +2,19 @@
     <h3>{{ titles.title }}</h3>
     <hr />
 
-    <div class="row row-cols-1 row-cols-sm-2 g-3">
-        <div class="col">
-            <div class="card p-2 overflow-auto">
+    <div class="accordion accordion-flush" id="accordionFlush">
+        <div class="accordion-item">
+          <h2 class="accordion-header border" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                 <h5>{{ titles.titleOne }}</h5>
-                <hr />
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlush">
+            <div class="accordion-body border overflow-hidden">
                 <strong>Need to focus on below topics</strong>
                 <ol>
                     <li>Required steps & suggestions for Installation</li>
-                    <ol>
+                    <ol type="a">
                         <li>
                             Install Node and NPM: LTS versions only
                         </li>
@@ -45,24 +49,29 @@
                     <li>How to use CSS</li>
                 </ol>
             </div>
+          </div>
         </div>
 
-        <div class="col">
-            <div class="card p-2 overflow-auto">
-                <h5>{{ titles.titleTwo }}</h5>
-                <hr />
+        <div class="accordion-item">
+            <h2 class="accordion-header border" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <h5>{{ titles.titleTwo }}</h5>
+                </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse hide" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlush">
+            <div class="accordion-body border overflow-auto">
                 <strong>For Beginners</strong>
                 <ol>
                     <li><code>package.json</code></li>
                     <li><code>node_modules</code></li>
                     <li><code>src</code></li>
-                    <ol>
+                    <ol type="a">
                         <li><code>app</code></li>
                         <li><code>assets</code></li>
                         <li><code>environments</code></li>
                         <li><code>index.html</code></li>
                         <li><code>main.ts</code>
-                            <ol>
+                            <ol type="i">
                                 <li>Use connect/Bootstrap html and angular application</li>
                             </ol>
                         </li>
@@ -75,24 +84,24 @@
                 <strong>For Advanced Use</strong>
                 <ol>
                     <li><code>package-lock.json</code>
-                        <ol>
+                        <ol type="a">
                             <li>Keep the details of each package, which required dependencies</li>
                         </ol>
                     </li>
                     <li><code>angular.json</code></li>
                     <li><code>tsconfig.json</code>
-                        <ol>
+                        <ol type="a">
                             <li>Is handles Global Configurations</li>
                             <li>Typescript configuration files</li>
                             <li>Targets ecmascripts versions, which needs to be target</li>
                         </ol>
                     </li>
                     <li><code>tsconfig.app.json</code>
-                        <ol>
+                        <ol type="a">
                             <li>Is handle Typescript Application Configuration</li>
                         </ol>
                     <li><code>tsconfig.spec.json</code>
-                        <ol>
+                        <ol type="a">
                             <li>Is handles Test Configurations</li>
                             <li>We can includes new files as well <br />
                                 <code>
@@ -115,12 +124,17 @@
                     <li><code>polyfills.ts</code></li>
                 </ol>
             </div>
+          </div>
         </div>
 
-        <div class="col">
-            <div class="card p-2 overflow-auto">
-                <h5>{{ titles.titleFour }}</h5>
-                <hr />
+        <div class="accordion-item">
+            <h2 class="accordion-header border" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <h5>{{ titles.titleFour }}</h5>
+                </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse hide" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlush">
+            <div class="accordion-body border overflow-auto">
                 <nav class="nav flex-column">
                     <ol>
                         <li><a class="nav-link active"
@@ -131,6 +145,7 @@
                     </ol>
                 </nav>
             </div>
+          </div>
         </div>
-    </div>
-</div>
+      </div>
+   </div>
