@@ -11,7 +11,8 @@ import { NgSwitchComponent } from './concepts/ng-switch/ng-switch.component'
 import { NgForLoopComponent } from './concepts/ng-for-loop/ng-for-loop.component';
 import { SimpleFormsComponent } from './concepts/reactiveConcepts/simple-forms/simple-forms.component';
 import { FormValidationsComponent } from './concepts/reactiveConcepts/form-validations/form-validations.component';
-import { AngCLIComponent } from './concepts/ang-cli/ang-cli.component';
+import { CliComponent } from './concepts/cli/cli.component';
+
 
 
 const routes: Routes = [
@@ -65,8 +66,8 @@ const routes: Routes = [
     component: FormValidationsComponent
   },
   {
-    path: 'app-ang-cli ',
-    component: AngCLIComponent
+    path: 'app-cli',
+    component: CliComponent
   }
 ];
 
