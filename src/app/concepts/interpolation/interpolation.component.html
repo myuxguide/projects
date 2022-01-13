@@ -2,7 +2,7 @@
 
     <div class="accordion accordion-flush" id="accordionFlush">
         <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingOne">
+          <h2 class="accordion-header text-danger" id="flush-headingOne">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                 <!-- {{ }} is called Interpolation -->
                 <h5 class="mb-0">{{ title }}</h5>
@@ -12,6 +12,12 @@
             <div class="accordion-body border overflow-hidden">
                 <strong>About Interpolation</strong>
                 <ol type="1">
+                    <li>Which are not working in Interpolation
+                        <ol type="a">
+                            <li><code>typeOf</code> not Working</li>
+                            <li><code>Increamental/Decreamental [100++, 100--]</code> are not working</li>
+                        </ol>
+                    </li>
                     <li>What is Interpolation?
                         <ol type="a">
                             <li>
@@ -20,9 +26,22 @@
                         </ol>
                     </li>
                     <li>How to use it?</li>
-                    <li>What can we do with Interpolation?</li>
+                    <li><code>What can we do with Interpolation?</code>
+                        <ol type="a">
+                            <li>typeOf</li>
+                            <li>incremental Operators</li>
+                            <li>decreamental Operators</li>
+                        </ol>
+                    </li>
                     <li>What can not we do with Interpolation?</li>
-                    <li>Interview Questions</li>
+                    <li><code>Interview Questions</code>
+                        <ol type="a">
+                            <li><p>This is simple <code>{{title}}</code></p></li>
+                            <li>
+                                <p class="{{title}}">Title interpolation used in class <code>{{ title }}</code></p>
+                            </li>
+                        </ol>
+                    </li>
                 </ol>
             </div>
           </div>
@@ -32,24 +51,35 @@
 
     <hr />
 
-    <h3>Angular: {{title}}</h3>
+    <h3>Angular: <code>{{title}}</code></h3>
     <p><strong>Simple String Interpolation</strong></p>
-    <p>This is {{ title }}</p>
+    <p>This is <code>{{ title }}</code></p>
+    <p>Is this Interpolation? <code>{{title=='Iterpolation'}}</code></p>
+    <p>Is this Mathematics? <code>{{title=='Mathematics'}}</code></p>
+    <p>Is this <code>{{ checkDataType }}</code> type Of Data</p>
 
     <br />
 
-    <p><strong>Calculation Interpolation</strong></p>
-    <p>5 + 4: {{ calcs_A + calcs_B }}</p>
+    <h3>Check Datatype</h3>
+
+    <br />
+
+    <h5>Interpolation using method or function</h5>
+    <p></p><code>{{getValue()}}</code>
+
+    <p><strong>Calculation Interpolation</strong>
+        <code>5 + 4 = {{ calcs_A + calcs_B }}</code>
+    </p>
 
     <br />
 
     <p><strong>Object Interpolation</strong></p>
-    <p>User Details: {{UserDetails.firstName+ UserDetails.space + UserDetails.lastName}}</p>
-    <p>User Location: {{UserDetails.location}}</p>
+    <p>User Details: <code>{{UserDetails.firstName+ UserDetails.space + UserDetails.lastName}}</code></p>
+    <p>User Location: <code>{{UserDetails.location}}</code></p>
 
     <br />
 
     <p><strong>Object Interpolation: Print Array</strong></p>
-    <p>Array contains: {{arrayTest}}</p>
-    <p>Selected array is: {{arrayTest[2]}}</p>
+    <p>Array contains: <code>{{arrayTest}}</code></p>
+    <p>Selected array is: <code>{{arrayTest[2]}}</code></p>
 </div>

@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InterpolationComponent implements OnInit {
   // Simple String Interpolation
-  title = 'Iterpolation'
+  title = 'iterpolation'
 
   // Calculation Interpolation
   public calcs_A = 5
@@ -26,6 +26,16 @@ export class InterpolationComponent implements OnInit {
   arrayTest=[
     10,20,3,7,9,"String Value"
   ]
+
+  // Interpolation using mehtod/function
+  getValue(){
+    let getText= "I am Interpolation called by Function"
+
+    return getText
+  }
+
+  // Check typs of Datatype
+  checkDataType = 100
 
   constructor() { }
 
