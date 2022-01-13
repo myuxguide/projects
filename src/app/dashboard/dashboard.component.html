@@ -55,14 +55,20 @@
         <div class="accordion-item">
             <h2 class="accordion-header border" id="flush-headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    <h5 class="mb-0">{{ titles.titleTwo }}</h5>
+                    <h5 class="mb
+                    -0">{{ titles.titleTwo }}</h5>
                 </button>
           </h2>
           <div id="flush-collapseTwo" class="accordion-collapse collapse hide" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlush">
             <div class="accordion-body border overflow-auto">
                 <strong>For Beginners</strong>
                 <ol>
-                    <li><code>package.json</code></li>
+                    <li><code>package.json</code>
+                        <ol type="a">
+                            <li>Is the main file who is installing node_module</li>
+                            <li>project is not runnable without <code>package.json</code> file</li>
+                        </ol>
+                    </li>
                     <li><code>node_modules</code></li>
                     <li><code>src</code></li>
                     <ol type="a">
@@ -150,10 +156,18 @@
                                     <li>Browser polyfills. These are applied before loading ZoneJS and are sorted by browsers</li>
                                     <li>Application imports. Files imported after ZoneJS that should be loaded before your main file.</li>
                                     <li>
-                                        <strong>Refer Link: </strong> <br />
+                                        <strong>See: </strong> <br />
                                         <a href="https://angular.io/guide/browser-support" target="_blank"><code>https://angular.io/guide/browser-support</code></a>
                                     </li>
                                 </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <li><code>.editorconfig</code>
+                        <ol type="a">
+                            <li>Is maintain formatting in VS Code Editor</li>
+                            <li><strong>See:</strong> <br /> 
+                                <a href=""><code>https://editorconfig.org</code></a>
                             </li>
                         </ol>
                     </li>
