@@ -13,6 +13,8 @@ import { SimpleFormsComponent } from './concepts/reactiveConcepts/simple-forms/s
 import { FormValidationsComponent } from './concepts/reactiveConcepts/form-validations/form-validations.component';
 import { CliComponent } from './concepts/cli/cli.component';
 import { ModuleComponent } from './concepts/module/module.component';
+import { LoginComponent } from './users/login/login.component';
+import { RegistrationComponent } from './users/registration/registration.component';
 
 
 
@@ -21,6 +23,14 @@ const routes: Routes = [
     path: '',
     redirectTo: 'dashboard',
     pathMatch: 'full', // redirect to `first-component`
+  },
+  {
+    path: "registration",
+    component: RegistrationComponent
+  },
+  {
+    path: "login",
+    component: LoginComponent
   },
   {
     path: 'dashboard',    

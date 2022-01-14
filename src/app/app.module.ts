@@ -10,7 +10,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 // Custom Modules
-import { UsersListModule } from './user-list/user-list.module';
+import { UsersModule } from './users/users.module';
 import { CypressPractModule } from './cypress-pract/cypress-pract.module';
 
 @NgModule({
@@ -21,7 +21,7 @@ import { CypressPractModule } from './cypress-pract/cypress-pract.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    UsersListModule,
+    UsersModule,
     ConceptsModule,
     CypressPractModule
   ],
