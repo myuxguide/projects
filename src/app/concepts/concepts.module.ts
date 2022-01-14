@@ -12,6 +12,7 @@ import { RoutingBasicsComponent } from './routing-basics/routing-basics.componen
 import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import { NgForLoopComponent } from './ng-for-loop/ng-for-loop.component';
 import { CliComponent } from './cli/cli.component';
+import { ModuleComponent } from './module/module.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CliComponent } from './cli/cli.component';
     RoutingBasicsComponent,
     NgSwitchComponent,
     NgForLoopComponent,
-    CliComponent
+    CliComponent,
+    ModuleComponent
   ],
   imports: [
     CommonModule,
@@ -39,7 +41,8 @@ import { CliComponent } from './cli/cli.component';
     NgSwitchComponent,
     RoutingBasicsComponent,
     NgForLoopComponent,
-    CliComponent
+    CliComponent,
+    ModuleComponent
   ]
 })
 export class ConceptsModule {}
