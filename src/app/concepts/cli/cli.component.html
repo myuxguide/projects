@@ -2,19 +2,19 @@
     <div class="accordion accordion-flush" id="accordionFlush">
         <div class="accordion-item">
           <h2 class="accordion-header text-danger" id="flush-headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            <button class="accordion-button bg-primary bg-gradient text-white rounded shadow collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                 <!-- {{ }} is called Interpolation -->
                 <h5 class="mb-0">{{ title }}</h5>
             </button>
           </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlush">
+          <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlush">
             <div class="accordion-body border overflow-hidden">
                 <strong>About {{ title }}</strong>
                 <ol type="1">
                     <li><code>ng help</code>
                         <ol type="a">
                             <li>Help you to get all the details for all the required commands which are used in Angular CLI</li>
-                            <li><strong>Most Common Commands</strong>
+                            <li><code><strong>Most Common Commands</strong></code>
                                 <ol type="a">
                                     <li><code>ng add <i>libraryName</i></code></li>
                                     <li><code>ng build</code></li>
