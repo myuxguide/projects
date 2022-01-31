@@ -8,7 +8,6 @@ import { GetTextBoxValComponent } from './get-text-box-val/get-text-box-val.comp
 import { FormsModule } from '@angular/forms';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { NgIfComponent } from './ng-if/ng-if.component';
-import { RoutingBasicsComponent } from './routing-basics/routing-basics.component';
 import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import { NgForLoopComponent } from './ng-for-loop/ng-for-loop.component';
 import { CliComponent } from './cli/cli.component';
@@ -21,7 +20,6 @@ import { ModuleComponent } from './module/module.component';
     GetTextBoxValComponent,
     PropertyBindingComponent,
     NgIfComponent,
-    RoutingBasicsComponent,
     NgSwitchComponent,
     NgForLoopComponent,
     CliComponent,
@@ -39,7 +37,6 @@ import { ModuleComponent } from './module/module.component';
     PropertyBindingComponent,
     NgIfComponent,
     NgSwitchComponent,
-    RoutingBasicsComponent,
     NgForLoopComponent,
     CliComponent,
     ModuleComponent
