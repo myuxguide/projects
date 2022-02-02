@@ -12,6 +12,7 @@ import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import { NgForLoopComponent } from './ng-for-loop/ng-for-loop.component';
 import { CliComponent } from './cli/cli.component';
 import { ModuleComponent } from './module/module.component';
+import { CounterComponent } from './counter/counter.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ModuleComponent } from './module/module.component';
     NgSwitchComponent,
     NgForLoopComponent,
     CliComponent,
-    ModuleComponent
+    ModuleComponent,
+    CounterComponent
   ],
   imports: [
     CommonModule,
@@ -39,7 +41,8 @@ import { ModuleComponent } from './module/module.component';
     NgSwitchComponent,
     NgForLoopComponent,
     CliComponent,
-    ModuleComponent
+    ModuleComponent,
+    CounterComponent
   ]
 })
 export class ConceptsModule {}

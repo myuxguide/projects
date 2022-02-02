@@ -1,72 +1,70 @@
 <div class="mainSection">
-  <nav class="navbar navbar-expand-lg bg-gradient bg-primary shadow">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
-      <a class="navbar-brand text-white" href="#">myuxguide | </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#">Brand</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+        aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <div class="collapse navbar-collapse" id="main_nav">
+        <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link text-white" aria-current="page" routerLink="dashboard">Dashboard</a>
+            <a class="dropdown-item text-white" aria-current="page" routerLink="dashboard">Home</a>
           </li>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white active" href="#" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Ang. Concepts
-            </a>
-            <ul class="dropdown-menu bg-secondary bg-gradient text-white text-bold" aria-labelledby="navbarDropdown">              
-              <li><a class="nav-link text-white" aria-current="page" routerLink="click-events">Click Events</a></li>
-              <li><a class="nav-link text-white" routerLink="interpolation">Interpolation</a></li>
-              <li><a class="nav-link text-white" routerLink="get-text-box-val">Input Text</a></li>
-              <li><a class="nav-link text-white" routerLink="ng-if">Ng If</a></li>
-              <li><a class="nav-link text-white" routerLink="ng-switch">Ng Switch</a></li>
-              <li><a class="nav-link text-white" routerLink="ng-for-loop">Ng For Loop</a></li>
-              <li><a class="nav-link text-white" routerLink="property-binding">Property Binding</a></li>              
-              <li><a class="nav-link text-white" routerLink="app-simple-forms">Angular Simple Forms</a></li>
-              <li><a class="nav-link text-white" routerLink="app-form-validations">Angular Forms Validations</a></li>              
-              <li><a class="nav-link text-white" routerLink="app-cli">Angular-CLI</a></li>              
+          <li class="nav-item dropdown" id="dropDownOne">
+            <a class="dropdown-item text-white dropdown-toggle active" href="#" id="dropDownOne" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">Concepts</a>
+            <ul class="dropdown-menu bg-secondary">
+              <li><a class="dropdown-item text-white" aria-current="page" routerLink="click-events">Click Events</a>
+              </li>
+              <li><a class="dropdown-item text-white" routerLink="interpolation">Interpolation</a></li>
+              <li><a class="dropdown-item text-white" routerLink="get-text-box-val">Input Text</a></li>
+              <li><a class="dropdown-item text-white" routerLink="ng-if">Ng If</a></li>
+              <li><a class="dropdown-item text-white" routerLink="ng-switch">Ng Switch</a></li>
+              <li><a class="dropdown-item text-white" routerLink="ng-for-loop">Ng For Loop</a></li>
+              <li><a class="dropdown-item text-white" routerLink="property-binding">Property Binding</a></li>
+              <li><a class="dropdown-item text-white" routerLink="app-simple-forms">Angular Simple Forms</a></li>
+              <li><a class="dropdown-item text-white" routerLink="app-form-validations">Angular Forms Validations</a>
+              </li>
+              <li><a class="dropdown-item text-white" routerLink="app-cli">Angular-CLI</a></li>
+              <li> <a class="dropdown-item text-white" href="#"> Architecture &raquo; </a>
+                <ul class="submenu dropdown-menu bg-secondary">
+                  <li><a class="dropdown-item text-white" routerLink="app-components">Components</a></li>
+                  <li><a class="dropdown-item text-white" routerLink="app-module">Module</a></li>
+                  <li><a class="dropdown-item text-white" routerLink="app-services">Services</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-item text-white" routerLink="app-counter">Counter</a>
+              </li>
             </ul>
           </li>
+          <!-- END Concepts -->
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white active" href="#" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Ang. Architecture
-            </a>
-            <ul class="dropdown-menu bg-secondary bg-gradient text-white text-bold" aria-labelledby="navbarDropdown">
-              <li><a class="nav-link text-white" routerLink="app-components">Components</a></li>
-              <li><a class="nav-link text-white" routerLink="app-module">Module</a></li>
-              <li><a class="nav-link text-white" routerLink="app-services">Services</a></li>
-            </ul>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white active" href="#" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Routing
-            </a>
-            <ul class="dropdown-menu bg-secondary bg-gradient text-white text-bold" aria-labelledby="navbarDropdown">
-              <li><a class="nav-link text-white" routerLink="routing-basics">Basic/Static Routing</a></li>
-              <li><a class="nav-link text-white" routerLink="routing-basics">Dynamic Routing</a></li>
-              <li><a class="nav-link text-white" routerLink="routing-basics">Wild Card | 404 page Routing</a></li>
-              <li><a class="nav-link text-white" routerLink="routing-basics">Child Routing</a></li>
-              <li><a class="nav-link text-white" routerLink="routing-basics">Routing Module</a></li>
-              <li><a class="nav-link text-white" routerLink="routing-basics">Group Routing</a></li>
-              <li><a class="nav-link text-white" routerLink="routing-basics">Lazy Loading</a></li>
-              <li><a class="nav-link text-white" routerLink="routing-basics">Lazy Loading Component</a></li>
-              <li><a class="nav-link text-white" routerLink="routing-basics">Route Guard</a></li>
+          <li class="nav-item dropdown" id="routing">
+            <a class="dropdown-item text-white dropdown-toggle active" href="#" id="routingDropDown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">Routing</a>
+            <ul class="dropdown-menu bg-secondary">
+              <li><a class="dropdown-item text-white" routerLink="routing-basics">Basic/Static Routing</a></li>
+              <li><a class="dropdown-item text-white" routerLink="routing-basics">Dynamic Routing</a></li>
+              <li><a class="dropdown-item text-white" routerLink="routing-basics">Wild Card | 404 page Routing</a></li>
+              <li><a class="dropdown-item text-white" routerLink="routing-basics">Child Routing</a></li>
+              <li><a class="dropdown-item text-white" routerLink="routing-basics">Routing Module</a></li>
+              <li><a class="dropdown-item text-white" routerLink="routing-basics">Group Routing</a></li>
+              <li><a class="dropdown-item text-white" routerLink="routing-basics">Lazy Loading</a></li>
+              <li><a class="dropdown-item text-white" routerLink="routing-basics">Lazy Loading Component</a></li>
+              <li><a class="dropdown-item text-white" routerLink="routing-basics">Route Guard</a></li>
               <!-- https://www.youtube.com/watch?v=zL1N2lTeHmY&ab_channel=SahosoftSolutions -->
             </ul>
-          </li>          
+          </li>
+          
         </ul>
-
-        <a class="nav-link text-white" routerLink="app-login">User</a>
       </div>
+      <!-- navbar-collapse.// -->
     </div>
+    <!-- container-fluid.// -->
   </nav>
-
+  <!-- END navBar  -->
   <router-outlet></router-outlet>
 </div>

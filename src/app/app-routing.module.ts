@@ -16,8 +16,7 @@ import { ModuleComponent } from './concepts/module/module.component';
 import { LoginComponent } from './users/login/login.component';
 import { RegistrationComponent } from './users/registration/registration.component';
 import { ComponentsComponent } from './angular-architecture/components/components.component';
-
-
+import { CounterComponent } from './concepts/counter/counter.component';
 
 const routes: Routes = [
   {
@@ -88,6 +87,10 @@ const routes: Routes = [
   {
     path: 'app-components',
     component: ComponentsComponent
+  },
+  {
+    path: "app-counter",
+    component: CounterComponent
   }
 ];
 
