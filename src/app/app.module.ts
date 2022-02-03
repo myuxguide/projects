@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 // Custom Modules & Component
 import { ConceptsModule } from './concepts/concepts.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
-
+import { RoutingBasicsComponent } from './routing-basics/routing-basics.component';
 
 // Custom Modules
 import { UsersModule } from './users/users.module';
@@ -17,7 +17,8 @@ import { AngularArchitectureModule } from './angular-architecture/angular-archit
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent
+    DashboardComponent,
+    RoutingBasicsComponent
   ],
   imports: [
     BrowserModule,

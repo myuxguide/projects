@@ -5,7 +5,7 @@ import { GetTextBoxValComponent } from './concepts/get-text-box-val/get-text-box
 import { InterpolationComponent } from './concepts/interpolation/interpolation.component';
 import { NgIfComponent } from './concepts/ng-if/ng-if.component';
 import { PropertyBindingComponent } from './concepts/property-binding/property-binding.component';
-import { RoutingBasicsComponent } from './routing/routing-basics/routing-basics.component';
+import { RoutingBasicsComponent } from './routing-basics/routing-basics.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NgSwitchComponent } from './concepts/ng-switch/ng-switch.component'
 import { NgForLoopComponent } from './concepts/ng-for-loop/ng-for-loop.component';
