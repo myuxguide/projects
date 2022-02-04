@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./counter.component.css']
 })
 export class CounterComponent implements OnInit {
-
+  title: string = "Counter"
   constructor() { }
 
   ngOnInit(): void {
