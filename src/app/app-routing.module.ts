@@ -4,7 +4,6 @@ import { ClickEventsComponent } from './concepts/click-events/click-events.compo
 import { GetTextBoxValComponent } from './concepts/get-text-box-val/get-text-box-val.component';
 import { InterpolationComponent } from './concepts/interpolation/interpolation.component';
 import { NgIfComponent } from './concepts/ng-if/ng-if.component';
-import { PropertyBindingComponent } from './concepts/property-binding/property-binding.component';
 import { RoutingBasicsComponent } from './routing-basics/routing-basics.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NgSwitchComponent } from './concepts/ng-switch/ng-switch.component'
@@ -59,10 +58,6 @@ const routes: Routes = [
   {
     path: 'ng-for-loop',
     component: NgForLoopComponent
-  },
-  {
-    path: 'property-binding',
-    component: PropertyBindingComponent
   },
   {
     path: 'routing-basics',

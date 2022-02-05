@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FormValidationsComponent } from './form-validations.component';
+import { ProgresscardComponent } from './progresscard.component';
 
-describe('FormValidationsComponent', () => {
-  let component: FormValidationsComponent;
-  let fixture: ComponentFixture<FormValidationsComponent>;
+describe('ProgresscardComponent', () => {
+  let component: ProgresscardComponent;
+  let fixture: ComponentFixture<ProgresscardComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FormValidationsComponent ]
+      declarations: [ ProgresscardComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FormValidationsComponent);
+    fixture = TestBed.createComponent(ProgresscardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
