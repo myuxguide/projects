@@ -2,14 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { DashboardRoutingModule } from './dashboard-routing.module';
-import { ProgresscardComponent } from './progresscard/progresscard.component';
-
-
-
-
 @NgModule({
   declarations: [
-    ProgresscardComponent
   ],
   imports: [
     CommonModule,
@@ -17,7 +11,6 @@ import { ProgresscardComponent } from './progresscard/progresscard.component';
   ],
   exports: [
     DashboardRoutingModule,
-    ProgresscardComponent
   ]
 })
 export class DashboardModule { }

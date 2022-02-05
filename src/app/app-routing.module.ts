@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
 import { ClickEventsComponent } from './concepts/click-events/click-events.component';
 import { GetTextBoxValComponent } from './concepts/get-text-box-val/get-text-box-val.component';
 import { InterpolationComponent } from './concepts/interpolation/interpolation.component';
@@ -14,6 +15,8 @@ import { LoginComponent } from './users/login/login.component';
 import { RegistrationComponent } from './users/registration/registration.component';
 import { ComponentsComponent } from './angular-architecture/components/components.component';
 import { CounterComponent } from './concepts/counter/counter.component';
+
+
 
 const routes: Routes = [
   {

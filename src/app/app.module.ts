@@ -12,6 +12,7 @@ import { RoutingBasicsComponent } from './routing-basics/routing-basics.componen
 import { UsersModule } from './users/users.module';
 import { CypressPractModule } from './cypress-pract/cypress-pract.module';
 import { AngularArchitectureModule } from './angular-architecture/angular-architecture.module';
+import { DashboardRoutingModule } from './dashboard/dashboard-routing.module';
 
 
 import { InterpolationComponent } from './concepts/interpolation/interpolation.component';
@@ -25,7 +26,7 @@ import { CliComponent } from './concepts/cli/cli.component';
 import { ModuleComponent } from './concepts/module/module.component';
 import { CounterComponent } from './concepts/counter/counter.component';
 
-import { ProgresscardComponent } from './dashboard/progresscard/progresscard.component';
+
 
 
 
@@ -42,15 +43,15 @@ import { ProgresscardComponent } from './dashboard/progresscard/progresscard.com
     NgForLoopComponent,
     CliComponent,
     ModuleComponent,
-    CounterComponent,
-    ProgresscardComponent
+    CounterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     UsersModule,
     AngularArchitectureModule,
-    CypressPractModule
+    CypressPractModule,
+    DashboardRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
