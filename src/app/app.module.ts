@@ -24,8 +24,6 @@ import { NgForLoopComponent } from './concepts/ng-for-loop/ng-for-loop.component
 import { CliComponent } from './concepts/cli/cli.component';
 import { ModuleComponent } from './concepts/module/module.component';
 import { CounterComponent } from './concepts/counter/counter.component';
-
-import { FormValidationsComponent } from './concepts/reactiveConcepts/form-validations/form-validations.component';
 import { SimpleFormsComponent } from './concepts/reactiveConcepts/simple-forms/simple-forms.component';
 
 import { ProgresscardComponent } from './dashboard/progresscard/progresscard.component';
@@ -46,7 +44,6 @@ import { ProgresscardComponent } from './dashboard/progresscard/progresscard.com
     CliComponent,
     ModuleComponent,
     CounterComponent,
-    FormValidationsComponent,
     SimpleFormsComponent,
     ProgresscardComponent
   ],
