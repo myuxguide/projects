@@ -10,7 +10,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { NgSwitchComponent } from './concepts/ng-switch/ng-switch.component'
 import { NgForLoopComponent } from './concepts/ng-for-loop/ng-for-loop.component';
 import { CliComponent } from './concepts/cli/cli.component';
-import { ModuleComponent } from './concepts/module/module.component';
+import { ModuleComponent } from './concepts/module/module.component'; 
 import { LoginComponent } from './users/login/login.component';
 import { RegistrationComponent } from './users/registration/registration.component';
 import { ComponentsComponent } from './angular-architecture/components/components.component';
