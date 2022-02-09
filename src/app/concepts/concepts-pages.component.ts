@@ -6,18 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./concepts-pages.component.css']
 })
 export class ConceptsPagesComponent implements OnInit {
-  pageTitle: string = "Angular Concepts"
-  pageSubTitle: string = "Interpolation"
+  
   
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  titles = [
-    {
-      title: "Angular Concepts"
-    }
-  ]
+  // Object Interpolation
+  titles ={
+    pageTitle : "Angular Concepts"
+  }
 
 }
