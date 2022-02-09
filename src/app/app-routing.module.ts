@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './auth/auth.guard';
+import { ConceptsPagesComponent } from './concepts/concepts-pages.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -10,7 +11,11 @@ import { UserComponent } from './user/user.component';
 const routes: Routes = [
   {
     path: "",
-    component: HomeComponent
+    component: ConceptsPagesComponent
+  },
+  {
+    path: "concepts",
+    component: ConceptsPagesComponent
   },
   {
     path: "user",
