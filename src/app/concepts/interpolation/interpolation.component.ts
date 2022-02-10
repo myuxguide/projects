@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./interpolation.component.css']
 })
 export class InterpolationComponent implements OnInit {
-  
+  title = "Interpolation"
   titles = {
     titleInterploation: "Interpolation"
   }

@@ -1,11 +1,11 @@
 <div class="card w-100 shadow">
-  <div class="card-header">
+  <div class="card-header bg-secondary text-white">
     About {{ titles.titleInterploation }}
   </div>
   <!-- END card-header -->
 
   <div class="card-body">
-    <h5 class="card-title">Main Points</h5>
+    <h3 class="card-title">Main Points</h3>
     <ul type="disc">
       <li>
         <p class="mb-0">
@@ -24,7 +24,7 @@
 
         <ol type="i">
           <li>
-            <strong class="">Simple Interpolation</strong>
+            <h5>Simple Interpolation</h5>
             <pre>
                 <u><strong>my.component.html</strong></u>
                 <strong>Simple Interpolation</strong>
@@ -36,7 +36,7 @@
           </li>
 
           <li>
-            <strong>Interpolation using Objects</strong>
+            <h5>Interpolation using Objects</h5>
             <pre>                
                 <u><strong>my.component.html</strong></u>
                 <strong>Object Interpolation</strong>
@@ -53,7 +53,7 @@
             </li>
 
             <li>
-              <strong>Interpolation using Function</strong>
+              <h5>Interpolation using Function</h5>
               <pre>                
                 <u><strong>my.component.html</strong></u>
                 <strong>Function Interpolation</strong>
@@ -69,20 +69,33 @@
           </li>
 
           <li>
-            <strong>Interpolation: check value is correct or not using Boolean</strong>
+            <h5>Interpolation: check value is correct or not using Boolean</h5>
             <pre>
               <u><strong>my.component.html</strong></u>
-              <strong>Function Interpolation</strong>
-              &#123; &#123; getValue() &#125;&#125;
+              <strong>Boolean Interpolation</strong>
+              &#123; &#123; title=="<u>myTitle</u>" &#125;&#125;
               <u>Output</u>
               Interpolation Value coming from &#123; &#123; My Title &#125;&#125; via function
 
               <u><strong>my.component.ts</strong></u>
-              getValue()&#123;
-                return "My Title"
-              &#125;
+              title = "<u>Interpolation</u>"
             </pre>
         </li>
+        
+        <li>
+          <h5>Interpolation: in css class</h5>
+          <pre>
+            <u><strong>my.component.html</strong></u>
+            <strong>Interpolation as CSS Class</strong>
+            <label class="{{title}}">Value used in class</label>
+
+            <u>Output</u>
+            &lt;p class="&#123; &#123;title&#125;&#125;"&gt;Value used in class&lt;/p&gt;
+
+            <u><strong>my.component.ts</strong></u>
+            title = "myTitle"
+          </pre>
+      </li>
         </ol>
       </li>
     </ul>
