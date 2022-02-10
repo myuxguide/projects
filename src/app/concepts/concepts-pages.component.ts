@@ -15,7 +15,9 @@ export class ConceptsPagesComponent implements OnInit {
 
   // Object Interpolation
   titles ={
-    pageTitle : "Angular Concepts"
+    pageTitle : "Angular Concepts",
+    interpolate: "Interpolation",
+    cli: "Angular CLI"
   }
 
 }

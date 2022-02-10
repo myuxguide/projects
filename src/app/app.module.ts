@@ -11,7 +11,6 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { UserComponent } from './user/user.component';
 import { LoginComponent } from './user/login/login.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
-
 @NgModule({
   declarations: [
     AppComponent,
