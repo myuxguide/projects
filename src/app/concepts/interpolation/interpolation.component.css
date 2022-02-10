@@ -2,6 +2,5 @@ strong, pre>strong{
     color: #d63384;
 }
 .card-body{
-    height: 400px;
-    overflow-y: scroll;
+    min-height: 400px;
 }

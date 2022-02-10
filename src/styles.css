@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+.card-header>a{
+    border-bottom: 1px dashed #fff !important;
+    color: #fff !important;
+    text-decoration: none !important;
+}
+.card-body{
+    min-height: 400px;
+}

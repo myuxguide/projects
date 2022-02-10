@@ -1,16 +1,31 @@
 <div class="card w-100 shadow">
     <div class="card-header bg-secondary text-white">
-      About {{ titles.titleCli }}
+      About <a class="refLink" href="https://angular.io/cli" target="_blank">{{ titles.titleCli }}</a>
     </div>
     <!-- END card-header -->
   
     <div class="card-body">
-      <h3 class="card-title">Main Points</h3>
-      <ul type="1">
+      <ol type="1">
+        <li>CLI: <code><u>C</u>ommand <u>L</u>ine <u>I</u>nterface</code></li>
         <li>
-            <code>;k</code>
+            Use for...
+            <ul>
+                <li>Command Reference: <code>ng <a href="https://angular.io/cli/help" target="_blank">help</a></code></li>
+                <li>Create Angular Project: <code>ng <a href="https://angular.io/cli/new" target="_blank">new</a> <i> myProject</i></code></li>
+                <li>Run Angular Project: <code>ng <a href="https://angular.io/cli/serve" target="_blank">serve</a></code></li>
+                <li>Generate Component:<code> ng <a href="https://angular.io/cli/generate" target="_blank">generate</a> component <i>myComponentName</i></code></li>
+                <li>Generate Modules: <code>ng <a href="https://angular.io/cli/generate" target="_blank">generate</a> module <i>myModule</i></code></li>
+                <li>Generate Services: <code>ng <a href="https://angular.io/cli/generate" target="_blank">generate</a> service <i>myService</i></code></li>
+                <li>Generate Routing Auth: <code>ng <a href="https://angular.io/cli/generate" target="_blank">generate</a> <i> Auth</i></code></li>
+                <li>Check Linting Errors: <code>ng <a href="https://angular.io/cli/lint" target="_blank">lint</a></code></li>
+                <li>Generate Project Build: <code>ng <a href="https://angular.io/cli/build" target="_blank">build</a> <i> project</i></code></li>
+                <li>Run Unit Test: <code>ng <a href="https://angular.io/cli/test" target="_blank">test</a></code></li>
+                <li>Update Angular version: <code>ng <a href="https://angular.io/cli/update" target="_blank">update</a></code></li>
+                <li>Check Angular version: <code>ng <a href="https://angular.io/cli/version" target="_blank">version</a></code></li>
+                <li>Add New Angular Dependencies: <code>ng <a href="https://angular.io/cli/add" target="_blank">add</a> <i> bootstrap</i></code></li>
+            </ul>
         </li>
-      </ul>
+      </ol>
     </div>
     
     <!-- END Card Body -->
