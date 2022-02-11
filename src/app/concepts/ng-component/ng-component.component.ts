@@ -11,7 +11,7 @@ export class NgComponentComponent implements OnInit {
    titleComponent: "Component",
    titleModule: "Module",
    titleInlineStyle: "Inline Style",
-   titleInlineTermplate: "Inline Template",
+   titleInlineTermplate: "Inline Template"
   }
 
   constructor() { }

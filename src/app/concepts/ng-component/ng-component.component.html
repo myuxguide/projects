@@ -1,6 +1,8 @@
 <div class="card w-100 shadow">
     <div class="card-header bg-secondary text-white">
-        About <a class="refLink" href="https://angular.io/guide/component-overview" target="_blank">{{ titles.titleComponent }}</a> & <a class="refLink" href="https://angular.io/guide/ngmodules" target="_blank">{{ titles.titleModule }}</a>
+        About <a class="refLink" href="https://angular.io/guide/component-overview" target="_blank">{{
+            titles.titleComponent }}</a> & <a class="refLink" href="https://angular.io/guide/ngmodules"
+            target="_blank">{{ titles.titleModule }}</a>
     </div>
     <!-- END card-header -->
 
@@ -19,15 +21,13 @@
         <h5>{{titles.intro}}: {{ titles.titleComponent }} with {{titles.titleInlineStyle}}(s)</h5>
         <ol type="1">
             <li>
-                <pre>
-                    <code>
-                    <!-- @Component({
-                        selector: 'app-ng-component',
-                        templateUrl: './ng-component.component.html',
-                        styleUrls: ['./ng-component.component.css']
-                    }) -->
-                    </code>
-                </pre>
+                <code>
+                    &commat;Component&lpar;&lcub; <br />
+                        &nbsp; &nbsp;selector: 'app-ng-component', <br />
+                        &nbsp; &nbsp;templateUrl: './ng-component.component.html', <br/>
+                        &nbsp; &nbsp;styleUrls: ['./ng-component.component.css'] <br />             
+                    &rcub;&rpar;
+                </code>
             </li>
             <li>A Typescript class that defines behavior</li>
             <li>A CSS selector that defines how the component is used in a template</li>
