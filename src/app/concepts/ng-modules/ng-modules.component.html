@@ -1,0 +1,35 @@
+<div class="card w-100 shadow">
+    <div class="card-header bg-secondary text-white">
+        About <a class="refLink" href="https://angular.io/guide/component-overview" target="_blank">{{
+            titles.titleModules }}</a>
+    </div>
+    <!-- END card-header -->
+
+    <div class="card-body">
+        <h5>{{titles.intro}}: {{titles.titleModules}}(s)</h5>
+        <ol type="1">
+            <li>ng Command: <code>ng generate module <i>my{{titles.titleModules}}Name</i></code></li>
+            <li>An HTML template that declares what renders on the page</li>
+            <li>A Typescript class that defines behavior</li>
+            <li>A CSS selector that defines how the component is used in a template</li>
+            <li>Optionally, CSS styles applied to the template</li>
+        </ol>
+
+        <h5>{{titles.titleModules}}(s) {{titles.titleExample}}</h5>
+        <ol type="1">
+            <li>Module is like a complete functionality itself, which includes multiple features</li>
+            <li>Module is not re-usable</li>
+            <li>We can re-user the component which we created</li>
+            <li>Required Components are comes under user.module</li>
+            <li>
+                <code>login.component</code> <br/>
+                <code>register.component</code> <br />
+                <code>forgetPassword.component</code> <br />
+                <code>user.service</code> [Use for API Call]<br />
+                <code>user.pipes</code> [Use as a Helpers] <br />
+                <code>user.module [All the above functionalities are existed under this module]</code>
+            </li>
+        </ol>
+    </div>
+
+    <!-- END Card Body -->

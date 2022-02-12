@@ -4,13 +4,15 @@ import { ConceptsPagesComponent } from './concepts-pages.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { CLIcommandsComponent } from './clicommands/clicommands.component';
 import { NgComponentComponent } from './ng-component/ng-component.component';
+import { NgModulesComponent } from './ng-modules/ng-modules.component';
 
 @NgModule({
   declarations: [
     ConceptsPagesComponent,
     InterpolationComponent,
     CLIcommandsComponent,
-    NgComponentComponent
+    NgComponentComponent,
+    NgModulesComponent
   ],
   imports: [
     CommonModule
@@ -18,8 +20,8 @@ import { NgComponentComponent } from './ng-component/ng-component.component';
   exports: [
     ConceptsPagesComponent,
     CLIcommandsComponent,
-    NgComponentComponent
-
+    NgComponentComponent,
+    NgModulesComponent
   ]
 })
 export class ConceptsModule { }

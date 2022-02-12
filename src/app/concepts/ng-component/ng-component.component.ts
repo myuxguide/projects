@@ -8,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class NgComponentComponent implements OnInit {
   titles= {
     intro: "Introdution",
-   titleComponent: "Component",
-   titleModule: "Module",
-   titleInlineStyle: "Inline Style",
-   titleInlineTermplate: "Inline Template"
+    titleComponent: "Component",
+    titleModule: "Module",
+    titleInlineStyle: "Inline Style",
+    titleInlineTermplate: "Inline Template"
   }
 
   constructor() { }

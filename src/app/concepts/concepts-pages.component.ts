@@ -18,7 +18,7 @@ export class ConceptsPagesComponent implements OnInit {
     pageTitle : "Angular Concepts",
     interpolate: "Interpolation",
     cli: "Angular CLI",
-    component: "Components / Modules",
+    component: "Components",
     module: "Modules",
     function: "Functions",
     actions: "Actions",
