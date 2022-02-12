@@ -15,4 +15,23 @@ export class FunctionsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // simple method
+  getName(){
+    alert("Function Called...")
+  }
+
+  // parameter function
+  getNameTwo(name:string){
+    alert("Function Name Called...")
+  }
+
+  getNumberThree(name:number){
+    alert("Function Number Called...")
+  }
+
+  getMultipleParam(name:string, secondName:string){
+    alert(name)
+    alert(secondName)
+  }
+
 }

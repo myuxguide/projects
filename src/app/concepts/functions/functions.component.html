@@ -1,7 +1,6 @@
 <div class="card w-100 shadow">
     <div class="card-header bg-secondary text-white">
-        About <a class="refLink" href="https://angular.io/guide/component-overview" target="_blank">{{
-            titles.titleComponent }}</a>
+        About {{titles.titleComponent }}
     </div>
     <!-- END card-header -->
 
@@ -9,12 +8,47 @@
         <h5>{{titles.intro}}: {{titles.titleComponent}}(s)</h5>
         <ol type="1">
             <li>
-            <code><u>my.component.ts</u></code> <br />
-<code>
-getName&lpar;&rpar; &lcub; <br />
-    &nbsp; &nbsp; alert&lpar;"Function Called"&rpar;;<br />
-&rcub;
-</code>
+                <strong>Simple Method</strong>
+                <ol type="a">
+                    <li>
+                        <code><u>my.component.ts</u></code> <br />
+            <code>
+            getName&lpar;&rpar; &lcub; <br />
+                &nbsp; &nbsp; alert&lpar;"Function Called"&rpar;;<br />
+            &rcub;
+            </code>
+                        </li>
+            
+                        <li>
+                            <code><u>my.component.html</u></code> <br />
+                            &lt;input type="button" &lpar;click&rpar;="getName&lpar;&rpar;"" value="Click" /&gt;
+                        </li>
+            
+                        <li>
+                            <code><u>Output</u></code> <br />
+                            <input class="btn btn-primary" type="button" value="" (click)="getName()" value="Click" />
+                        </li>
+                </ol>
+            </li>
+
+            <li>
+                <strong>Function with Paramtere</strong>
+                <ol type="a">
+                    <li>
+                        <code><u>Output</u></code> <br />
+                        <input class="btn btn-primary" type="button" value="" (click)="getNameTwo('Jimish')" value="Click" />
+                    </li>
+
+                    <li>
+                        <code><u>Output2</u></code> <br />
+                        <input class="btn btn-primary" type="button" value="" (click)="getNumberThree(123)" value="Click" />
+                    </li>
+
+                    <li>
+                        <code><u>Output3</u></code> <br />
+                        <input class="btn btn-primary" type="button" value="" (click)="getMultipleParam('Jimish', 'Shah')" value="Click" />
+                    </li>
+                </ol>
             </li>
         </ol>
     </div>
