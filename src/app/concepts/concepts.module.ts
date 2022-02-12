@@ -6,6 +6,7 @@ import { CLIcommandsComponent } from './clicommands/clicommands.component';
 import { NgComponentComponent } from './ng-component/ng-component.component';
 import { NgModulesComponent } from './ng-modules/ng-modules.component';
 import { FunctionsComponent } from './functions/functions.component';
+import { ActionsComponent } from './actions/actions.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FunctionsComponent } from './functions/functions.component';
     CLIcommandsComponent,
     NgComponentComponent,
     NgModulesComponent,
-    FunctionsComponent
+    FunctionsComponent,
+    ActionsComponent
   ],
   imports: [
     CommonModule
