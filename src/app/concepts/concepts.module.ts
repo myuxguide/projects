@@ -5,6 +5,7 @@ import { InterpolationComponent } from './interpolation/interpolation.component'
 import { CLIcommandsComponent } from './clicommands/clicommands.component';
 import { NgComponentComponent } from './ng-component/ng-component.component';
 import { NgModulesComponent } from './ng-modules/ng-modules.component';
+import { FunctionsComponent } from './functions/functions.component';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { NgModulesComponent } from './ng-modules/ng-modules.component';
     InterpolationComponent,
     CLIcommandsComponent,
     NgComponentComponent,
-    NgModulesComponent
+    NgModulesComponent,
+    FunctionsComponent
   ],
   imports: [
     CommonModule
