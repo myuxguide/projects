@@ -15,10 +15,29 @@ export class EventsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  // Event Example
-  getData(){
-    console.warn("Function Called...");
-    
+  // Alert Event
+  getAlertData(){
+    alert("Function Called...");    
+  }
+
+  // getKeypressData
+  getKeypressData(val:string){
+    console.warn(val);
+  }
+
+  // getBlurData
+  getBlurData(val:string){
+    console.warn(val);    
+  }
+
+  // getInputData
+  getInputData(val:string){
+    console.warn(val);    
+  }
+
+  // getMouseOverData
+  getMouseOverData(val:string){
+    console.warn(val);    
   }
 
 }
