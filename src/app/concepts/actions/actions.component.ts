@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ActionsComponent implements OnInit {
   titles={
     intro: "Introduction",
-    titleComponent: "Actions"
+    titleComponent: "Actions [Events | blur | Keyup | keyDown...]"
   }
   constructor() { }
 
