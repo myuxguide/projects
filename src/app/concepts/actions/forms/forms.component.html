@@ -1,53 +1,52 @@
 <div class="card w-100 shadow">
     <div class="card-header bg-secondary text-white">
-        About {{titles.titleComponent }}
+        About <a href="https://angular.io/guide/forms-overview" target="_blank">{{titles.titleComponent }}</a>
     </div>
     <!-- END card-header -->
 
     <div class="card-body">
         <h5>{{titles.intro}}: {{titles.titleComponent}}(s)</h5>
         <ol type="1">
-            <li>                        
-                <ol type="a">
-                    <li>Call function with Important Events</li>
-                    <li>Event with input box and get value</li>
+            <li>Get the value from inputbox and print &amp; display the value</li>
+            <li>Using two methods      
+                <ol type="i">
+                    <li>Get the value on keyup(change)</li>
+                    <li>Get the Value with button click</li>
                 </ol>
-            </li>
-            <li>
-                <strong>Important Events</strong>
-                <ol type="a">
-                    <li>events
-                        <ol type="i">
-                            <li>Click Events on call functions</li>
-                        </ol>
-                    </li>
-                    <li>blur</li>
-                    <li>keyup</li>
-                    <li>keydown</li>
-                </ol>
-            </li>
+            </li>           
         </ol>
+        
+        <hr />
+        <h5>{{titles.titleExample1}}</h5>
 
-        <h5>{{titles.titleExample}}</h5>
-        <div class="accordion" id="accordionBasic">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    {{titles.titleActions}}
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionBasic">
-                <div class="accordion-body">
-                    <app-events></app-events>  
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionBasic">
-                <div class="accordion-body">
-                  <app-forms></app-forms>
-                </div>
-              </div>
-            </div>
-    </div>
-    <!-- END Card Body -->   
+        <input type="text" class="form-control w-25" (keyup)="getName(userName.value)" placeholder="Enter Name" name="name" #userName />
+
+        <p>
+            <strong>Value is: </strong>
+            {{ titles.displayVal }}
+        </p>
+
+        <hr />
+
+        <h5>{{titles.titleExample2}}</h5>
+        <input type="text" class="form-control w-25" placeholder="Enter Name and click button" name="name" #userName2 />
+        
+        <button class="btn btn-primary" (click)="getNameOnClick(userName2.value)">Get UserName</button>
+
+        <p>
+            <strong>Value is: </strong>
+            {{ titles.displayValOnClick }}
+        </p>
+
+        <hr />
+
+        <h5>{{titles.titleExample3}}</h5>
+        <label for="userName2" class="text-danger">{{ titles.displayPlaceHolderVal }}</label>
+        <input type="text" class="form-control w-25" placeholder="Enter Name and click button" name="name" #userNameVal (keyup)="getplaceHolderValue(userNameVal.placeholder)" />
+        
+        <button class="btn btn-primary" (click)="getNameOnClick(userNameVal.value)">Get Attribute Value</button>
+
+        <p>
+            <strong>Value is: </strong>
+            {{ titles.displayValOnClick }}
+        </p>

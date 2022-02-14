@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent implements OnInit {
-
+  titles={
+    pageTitle:"Angular 12",
+    navConcepts:"Angular Concepts"
+  }
   constructor() { }
 
   ngOnInit(): void {

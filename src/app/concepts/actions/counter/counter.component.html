@@ -1,0 +1,30 @@
+<div class="card w-100 shadow">
+    <div class="card-header bg-secondary text-white">
+        About {{titles.titleCounter}}
+    </div>
+    <!-- END card-header -->
+
+    <div class="card-body">
+        <ol type="1">
+            <li>Usage of {{titles.titleCounter}}</li>
+            <li>Make {{titles.titleCounter}}
+                <ol type="i">                    
+                    <li>Make function for {{titles.titleCounter}}</li>
+                    <li>Call function on buttons</li>
+                </ol>
+            </li>           
+        </ol>
+        
+        <hr />
+
+        <h5>{{titles.titleExample1}}</h5>
+        <p>
+            <button class="btn btn-secondary" (click)="counter('minus')">--</button>
+        </p>
+
+            <label><strong>Count: </strong>{{count}}</label>
+
+        <p>
+            <button class="btn btn-secondary" (click)="counter('add')">++</button>            
+        </p>
+        

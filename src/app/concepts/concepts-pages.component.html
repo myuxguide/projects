@@ -15,11 +15,11 @@
 
         <a class="nav-link" id="v-pills-fuctions-tab" data-bs-toggle="pill" href="#v-pills-functions" role="tab" aria-controls="v-pills-fuctions" aria-selected="false">{{titles.function}}</a>
 
-        <a class="nav-link active" id="v-pills-actions-tab" data-bs-toggle="pill" href="#v-pills-actions" role="tab" aria-controls="v-pills-actions" aria-selected="false">{{titles.actions}}</a>
+        <a class="nav-link" id="v-pills-actions-tab" data-bs-toggle="pill" href="#v-pills-actions" role="tab" aria-controls="v-pills-actions" aria-selected="false">{{titles.actions}}</a>
 
         <a class="nav-link" id="v-pills-forms-tab" data-bs-toggle="pill" href="#v-pills-forms" role="tab" aria-controls="v-pills-forms" aria-selected="false">{{titles.forms}}</a>
 
-        <a class="nav-link" id="v-pills-counters-tab" data-bs-toggle="pill" href="#v-pills-counters" role="tab" aria-controls="v-pills-counters" aria-selected="false">{{titles.counter}}</a>
+        <a class="nav-link active" id="v-pills-counters-tab" data-bs-toggle="pill" href="#v-pills-counters" role="tab" aria-controls="v-pills-counters" aria-selected="false">{{titles.counter}}</a>
 
       </div>
       <div class="tab-content w-100" id="v-pills-tabContent">
@@ -47,7 +47,7 @@
           <app-functions></app-functions>          
         </div>
 
-        <div class="tab-pane fade show active" id="v-pills-actions" role="tabpanel" aria-labelledby="v-pills-actions-tab">
+        <div class="tab-pane fade" id="v-pills-actions" role="tabpanel" aria-labelledby="v-pills-actions-tab">
           <app-actions></app-actions>
         </div>
 
@@ -55,7 +55,9 @@
           <app-forms></app-forms>
         </div>
 
-        <div class="tab-pane fade" id="v-pills-counters" role="tabpanel" aria-labelledby="v-pills-counters-tab">Counters</div>
+        <div class="tab-pane fade show active" id="v-pills-counters" role="tabpanel" aria-labelledby="v-pills-counters-tab">
+          <app-counter></app-counter>
+        </div>
       </div>
     </div>
 </div>
