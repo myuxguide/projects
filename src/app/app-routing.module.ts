@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ArchitectureComponent } from './architecture/architecture.component';
 import { AuthGuard } from './auth/auth.guard';
 import { ConceptsPagesComponent } from './concepts/concepts-pages.component';
 import { AboutComponent } from './pages/about/about.component';
@@ -37,6 +38,10 @@ const routes: Routes = [
   {
     path: "contact",
     component: ContactComponent
+  },
+  {
+    path: "architecture",
+    component:ArchitectureComponent
   }
 ];
 

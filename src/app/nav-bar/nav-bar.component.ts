@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class NavBarComponent implements OnInit {
   titles={
     pageTitle:"Angular 12",
-    navConcepts:"Angular Concepts"
+    navConcepts:"Angular Concepts",
+    navArchitecture: "Angular Architecture"
   }
   constructor() { }
 

@@ -29,9 +29,11 @@ import { CounterComponent } from './actions/counter/counter.component';
   ],
   exports: [
     ConceptsPagesComponent,
+    InterpolationComponent,
     CLIcommandsComponent,
     NgComponentComponent,
     NgModulesComponent,
+    FunctionsComponent,
     EventsComponent,
     FormsComponent,
     CounterComponent
