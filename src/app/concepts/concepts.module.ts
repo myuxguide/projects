@@ -8,6 +8,7 @@ import { NgComponentComponent } from './ng-component/ng-component.component';
 import { NgModulesComponent } from './ng-modules/ng-modules.component';
 import { FunctionsComponent } from './functions/functions.component';
 import { ActionsComponent } from './actions/actions.component';
+import { FormsComponent } from './actions/forms/forms.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ActionsComponent } from './actions/actions.component';
     NgComponentComponent,
     NgModulesComponent,
     FunctionsComponent,
-    ActionsComponent
+    ActionsComponent,
+    FormsComponent
   ],
   imports: [
     CommonModule,
@@ -27,7 +29,8 @@ import { ActionsComponent } from './actions/actions.component';
     ConceptsPagesComponent,
     CLIcommandsComponent,
     NgComponentComponent,
-    NgModulesComponent
+    NgModulesComponent,
+    FormsComponent
   ]
 })
 export class ConceptsModule { }

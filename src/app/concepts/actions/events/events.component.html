@@ -9,35 +9,39 @@
         
         <div class="input-group input-group-sm">            
             <form action="">
-                <p><strong>Event on Input Box</strong></p>
+                <p class="mb-0"><strong>Event on Input Box</strong></p>
                 <input type="text" class="form-control" aria-label="Small input group" aria-describedby="input-group-sm"
                     placeholder="Event Keyup" (keyup)="getAlertData()" />
 
                 <hr />
 
                 <!-- Key press is also called 'keydown' -->
-                <p><strong>Keypress Event</strong></p>
+                <p class="mb-0"><strong>Keypress Event</strong></p>
                 <input type="text" class="form-control" aria-label="Small input group" aria-describedby="input-group-sm"
                     placeholder="Event Keypress" #myBoxOne (keypress)="getKeypressData(myBoxOne.value)" />
 
                 <hr />
 
                 <!-- Key blur -->
-                <p><strong>Blur Event</strong></p>
+                <p class="mb-0"><strong>Blur Event</strong></p>
                 <input type="text" class="form-control" aria-label="Small input group" aria-describedby="input-group-sm"
                     placeholder="Event Blur" #myBoxTwo (blur)="getBlurData(myBoxTwo.value)" />
 
 
                 <!-- Key input -->
-                <p><strong>Input Event</strong></p>
+                <p class="mb-0"><strong>Input Event</strong></p>
                 <input type="text" class="form-control" aria-label="Small input group" aria-describedby="input-group-sm"
                     placeholder="Event Input" #myBoxThree (blur)="getInputData(myBoxThree.value)" />
 
                 <hr />
 
                 <!-- mouseover event -->
-                <p><strong>Mouseover Event</strong></p>
+                <p class="mb-0"><strong>Mouseover Event</strong></p>
                 <p (mouseover)="getMouseOverData('over')">Code step by step</p>
+
+                <!-- mouseleave event -->
+                <p class="mb-0"><strong>Mouseleave Event</strong></p>
+                <p (mouseleave)="getMouseOverData('leave')">Code step by step</p>
 
 
                 <!-- <button class="btn btn-sm btn-primary ml-2" (click)="getInputData('Hello')">Get Input Data</button> -->
