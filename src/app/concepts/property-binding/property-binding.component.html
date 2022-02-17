@@ -1,0 +1,81 @@
+<div class="card w-100 shadow">
+    <div class="card-header bg-secondary text-white">
+      About <a href="https://angular.io/guide/property-binding" target="_blank">{{ titles.propBindings }}</a>
+    </div>
+    <!-- END card-header -->
+  
+    <div class="card-body">
+      <ol type="1">
+        <li>
+            <p class="mb-0">
+                {{ titles.propBindings }}<code>What is ?</code>
+            </p>
+            <ol>
+                <li>Use for change the property of the input value attribute</li>
+            </ol>
+        </li>
+        <li>
+            Property Binding vs Interpolation
+            <ol>
+                <li>Interpolation not working with Boolean values</li>
+                <li> working only with Numbers, String values</li>
+            </ol>
+        </li>  
+        <li>Property Binding Example
+            <ol>
+                <li>
+                    <p>
+                        <code>Using Interpolation</code>
+                        <input type="text" name="user-name" value="{{name}}" disabled="{{disable}}" />
+                        <code>disable: boolean = false</code>
+                        <br><br>
+                        <code>Using Property Binding</code>
+                        <input type="text" [value]=name [disabled]="disable" />
+                        <code>disable: boolean = false</code>
+                    </p>
+                </li>
+            </ol>
+        </li>
+      </ol>
+    </div>    
+    <!-- END Card Body -->
+
+    <div class="card-header bg-secondary text-white">
+        About <a href="https://angular.io/guide/property-binding" target="_blank">{{ titles.twoWayBindings }}</a>
+      </div>
+      <!-- END card-header -->
+    
+      <div class="card-body">
+        <ol type="1">
+          <li>
+              <p class="mb-0">
+                  <code>What is {{titles.twoWayBindings}}?</code>
+              </p>
+              <ol>
+                  <li>Use for change the property of the input value attribute</li>
+              </ol>
+          </li>
+          <li>
+              Property Binding vs Interpolation
+              <ol>
+                  <li>Interpolation not working with Boolean values</li>
+                  <li> working only with Numbers, String values</li>
+              </ol>
+          </li>  
+          <li>{{titles.twoWayBindings}} Example
+              <ol>
+                  <li>
+                      <p>
+                          <input type="text" [(ngModel)]="names" /> 
+                          <code> names: any</code>
+                      </p>
+                      <p>
+                          <label for=""></label>
+                          Your Name is: <code>{{names}}</code>
+                      </p>
+                  </li>
+              </ol>
+          </li>
+        </ol>
+      </div>    
+      <!-- END Card Body -->

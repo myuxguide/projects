@@ -23,7 +23,9 @@ export class ConceptsPagesComponent implements OnInit {
     function: "Functions",
     actions: "Actions",
     forms: "Forms",
-    counter: "Counters"
+    counter: "Counters",
+    propBindings: "Property Binding",
+    services: "Services"
   }
 
 }

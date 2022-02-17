@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { ConceptsPagesComponent } from './concepts-pages.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { CLIcommandsComponent } from './clicommands/clicommands.component';
@@ -10,6 +11,9 @@ import { ActionsComponent } from './actions/actions.component';
 import { EventsComponent } from './actions/events/events.component';
 import { FormsComponent } from './actions/forms/forms.component';
 import { CounterComponent } from './actions/counter/counter.component';
+import { PropertyBindingComponent } from './property-binding/property-binding.component';
+import { ServicesComponent } from './services/services.component';
+
 
 @NgModule({
   declarations: [
@@ -22,10 +26,13 @@ import { CounterComponent } from './actions/counter/counter.component';
     ActionsComponent,
     EventsComponent,
     FormsComponent,
-    CounterComponent
+    CounterComponent,
+    PropertyBindingComponent,
+    ServicesComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   exports: [
     ConceptsPagesComponent,
@@ -36,7 +43,9 @@ import { CounterComponent } from './actions/counter/counter.component';
     FunctionsComponent,
     EventsComponent,
     FormsComponent,
-    CounterComponent
+    CounterComponent,
+    PropertyBindingComponent,
+    ServicesComponent
   ]
 })
 export class ConceptsModule { }

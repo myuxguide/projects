@@ -11,12 +11,6 @@ import { PropbindingComponent } from './propbinding/propbinding.component';
   ],
   imports: [
     CommonModule
-  ],
-  exports: [
-    PropbindingComponent
-  ],
-  schemas: [
-    CUSTOM_ELEMENTS_SCHEMA
   ]
 })
 export class ArchitectureModule { }
