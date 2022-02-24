@@ -12,6 +12,7 @@ export class PropertyBindingComponent implements OnInit {
 
   titles={
     propBindings: "Property Binding",
+    interpolation: "Interpolation",
     twoWayBindings:"2-Way Binding"
   }
   constructor() { }

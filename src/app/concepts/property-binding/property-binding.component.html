@@ -8,33 +8,28 @@
       <ol type="1">
         <li>
             <p class="mb-0">
-                {{ titles.propBindings }}<code>What is ?</code>
+                <code>What is {{ titles.propBindings }}?</code>
             </p>
             <ol>
                 <li>Use for change the property of the input value attribute</li>
             </ol>
         </li>
-        <li>
-            Property Binding vs Interpolation
-            <ol>
-                <li>Interpolation not working with Boolean values</li>
-                <li> working only with Numbers, String values</li>
-            </ol>
-        </li>  
-        <li>Property Binding Example
-            <ol>
-                <li>
-                    <p>
-                        <code>Using Interpolation</code>
-                        <input type="text" name="user-name" value="{{name}}" disabled="{{disable}}" />
-                        <code>disable: boolean = false</code>
-                        <br><br>
-                        <code>Using Property Binding</code>
-                        <input type="text" [value]=name [disabled]="disable" />
-                        <code>disable: boolean = false</code>
-                    </p>
+
+        <li>{{titles.propBindings}} vs {{titles.interpolation}}
+            <ul>
+                <li class="mb-3">
+                    <code><strong>{{titles.propBindings}} <br />
+                    [{{titles.propBindings}} working only with Numbers, String values] </strong></code><br />
+                    <code>Using {{titles.propBindings}} - (disable: boolean = false): </code>
+                    <input type="text" [value]=name [disabled]="disable" />                    
                 </li>
-            </ol>
+                <li>
+                    <code><strong>{{titles.interpolation}}<br />
+                    [{{titles.interpolation}} not working with Boolean values] </strong></code><br />
+                    <code>Using {{titles.interpolation}} - (disable: boolean = false): </code>
+                    <input type="text" name="user-name" value="{{name}}" disabled="{{disable}}" />                    
+                </li>
+            </ul>
         </li>
       </ol>
     </div>    
@@ -58,8 +53,8 @@
           <li>
               Property Binding vs Interpolation
               <ol>
-                  <li>Interpolation not working with Boolean values</li>
-                  <li> working only with Numbers, String values</li>
+                  <li></li>
+                  <li> </li>
               </ol>
           </li>  
           <li>{{titles.twoWayBindings}} Example
@@ -68,10 +63,12 @@
                       <p>
                           <input type="text" [(ngModel)]="names" /> 
                           <code> names: any</code>
+                          
                       </p>
                       <p>
                           <label for=""></label>
                           Your Name is: <code>{{names}}</code>
+                          
                       </p>
                   </li>
               </ol>
