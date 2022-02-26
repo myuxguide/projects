@@ -19,12 +19,14 @@
             <ul>
                 <li class="mb-3">
                     <code><strong>{{titles.propBindings}} <br />
+                    <code><strong>{{titles.propBindings}} </strong><u>provides boolean(i.e. true / false) values</u></code><br />
                     [{{titles.propBindings}} working only with Numbers, String values] </strong></code><br />
                     <code>Using {{titles.propBindings}} - (disable: boolean = false): </code>
                     <input type="text" [value]=name [disabled]="disable" />                    
                 </li>
                 <li>
                     <code><strong>{{titles.interpolation}}<br />
+                    <code><strong>{{titles.interpolation}} </strong> <u>NOT provides boolean(i.e. true / false) values </u> </code><br />
                     [{{titles.interpolation}} not working with Boolean values] </strong></code><br />
                     <code>Using {{titles.interpolation}} - (disable: boolean = false): </code>
                     <input type="text" name="user-name" value="{{name}}" disabled="{{disable}}" />                    

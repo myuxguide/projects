@@ -10,6 +10,7 @@ import { EventsComponent } from './actions/events/events.component';
 import { FormsComponent } from './actions/forms/forms.component';
 import { CounterComponent } from './actions/counter/counter.component';
 import { ArchitectureModule } from './architecture/architecture.module';
+import { ConditionsComponent } from './conditions/conditions.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ArchitectureModule } from './architecture/architecture.module';
     ActionsComponent,
     EventsComponent,
     FormsComponent,
-    CounterComponent
+    CounterComponent,
+    ConditionsComponent
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,74 @@
+<div class="card w-100 shadow">
+    <div class="card-header bg-secondary text-white">
+      About <a href="https://angular.io/api/common/NgIf" target="_blank">{{ titles.titleConditions }}</a>
+    </div>
+    <!-- END card-header -->
+  
+    <div class="card-body">
+      <ol type="1">
+        <li>
+          <p class="mb-0">
+            Use to display dynamic data in HTML page
+          </p>
+          <p class="mb-0">
+            Dynamic data will be coming from TS file, where we create the variable either for String, boolen value or
+            numerical values
+          </p>
+        </li>
+  
+        <li>
+          <p>
+            Types of Interpolation
+          </p>
+  
+          <ol type="i">
+            <li>
+              <h5>Simple Interpolation</h5>
+              <pre>
+                  <u><strong>my.component.html</strong></u>
+                  <strong>Simple Interpolation</strong>
+                  &#123; &#123; myTitle &#125;&#125;
+                
+                  <u><strong>my.component.ts</strong></u>
+                  <code>myTitle: string = "My Tiltle Goes Here"</code> 
+              </pre>
+            </li>
+  
+            <li>
+              <h5>Interpolation using Objects</h5>
+              <pre>                
+                  <u><strong>my.component.html</strong></u>
+                  <strong>Object Interpolation</strong>
+                    &#123; &#123; titles.firstTitle &#125;&#125;
+                    &#123; &#123; titles.subTitle &#125;&#125;
+                  
+                    <u><strong>my.component.ts</strong></u>
+                    titles=&#123;
+                      firstTitle: "My First Title"
+                      subTitle: "My Sub-Title"
+                      &#125;
+                    myTitle: string = "My Tiltle Goes Here" 
+                </pre>
+              </li>
+  
+              <li>
+                <h5>Interpolation using Function</h5>
+                <pre>                
+                  <u><strong>my.component.html</strong></u>
+                  <strong>Function Interpolation</strong>
+                  &#123; &#123; getValue() &#125;&#125;
+                  <u>Output</u>
+                  Interpolation Value coming from &#123; &#123; My Title &#125;&#125; via function
+  
+                  <u><strong>my.component.ts</strong></u>
+                  getValue()&#123;
+                    return "My Title"
+                  &#125;
+                </pre>
+            </li>  
+          </ol>
+        </li>
+      </ol>
+    </div>
+    
+    <!-- END Card Body -->

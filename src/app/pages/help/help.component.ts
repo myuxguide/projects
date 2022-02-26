@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HelpComponent implements OnInit {
   pageTitle: string = "Help"
+  
   constructor() { }
 
   ngOnInit(): void {

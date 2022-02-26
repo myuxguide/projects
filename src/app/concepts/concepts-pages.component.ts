@@ -18,14 +18,12 @@ export class ConceptsPagesComponent implements OnInit {
     pageTitle : "Angular Concepts",
     interpolate: "Interpolation",
     cli: "Angular CLI",
-    component: "Components",
     module: "Modules",
     function: "Functions",
     actions: "Actions",
     forms: "Forms",
     counter: "Counters",
-    propBindings: "Property Binding",
-    services: "Services"
+    conditions: "Conditions"
   }
 
 }
