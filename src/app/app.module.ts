@@ -6,7 +6,7 @@ import { ConceptsModule } from './concepts/concepts.module';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
-import { AboutComponent } from './pages/about/about.component';
+import { HelpComponent } from './pages/help/help.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { UserComponent } from './user/user.component';
 import { LoginComponent } from './user/login/login.component';
@@ -17,7 +17,7 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent,
+    HelpComponent,
     ContactComponent,
     UserComponent,
     LoginComponent,
