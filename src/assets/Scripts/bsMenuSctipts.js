@@ -1,3 +1,10 @@
+$(function(){
+  $("a.nav-link").click(function(){    
+    $("a.nav-link").removeClass("active");
+    $(this).addClass("active");
+  })
+})
+
 document.addEventListener("DOMContentLoaded", function(){
     // make it as accordion for smaller screens
     if (window.innerWidth < 992) {
