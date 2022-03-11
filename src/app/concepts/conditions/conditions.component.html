@@ -1,60 +1,111 @@
 <div class="card w-100 shadow">
-    <div class="card-header bg-secondary text-white">
-      About <a href="{{titles.link}}" target="_blank">{{ titles.titleConditions }}</a>
-    </div>
-    <!-- END card-header -->
-  
-    <div class="card-body">
-      <nav id="navbar-scrollspy" class="navbar navbar-light bg-light">
-        <ul class="nav nav-pills">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle btn-primary" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">{{titles.conditions}}</a>
-            
-            <ul class="dropdown-menu dropdown-menu-start">
-              <li><a class="dropdown-item" href="#one">{{titles.ifElse}}</a></li>
-              <li><a class="dropdown-item" href="#two">{{titles.elseIfElse}}</a></li>
-              <li><a class="dropdown-item" href="#three">{{titles.switchCase}}</a></li>
-              <li><a class="dropdown-item" href="#four">{{titles.ngFor}}</a></li>
-              <li><a class="dropdown-item" href="#five">{{titles.nestedLoop}}</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-      <div data-bs-spy="scroll" data-bs-target="#navbar-scrollspy" data-bs-offset="0" tabindex="0" class="scrollspy-example">       
-        <h4 id="one">{{titles.ifElse}}</h4>
-        <hr />
-        <strong>{{titles.syntax}}</strong>
-        <div class="container">
-          <p *ngIf="show; then ifBlock else elseBlock"><strong>Show Text</strong></p>
+  <div class="card-header bg-secondary text-white">
+    About <a href="{{titles.link}}" target="_blank">{{ titles.titleConditions }}</a>
+  </div>
+  <!-- END card-header -->
 
-          <ng-template #ifBlock>
-            <p><strong>If Condition</strong></p>
-            <p>Uder if...condition</p>
-          </ng-template>
+  <div class="card-body">
+    <div class="d-flex align-items-start">
+      <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 
-          <ng-template #elseBlock>
-            <p><strong>Else Condition</strong></p>
-          
-            <p>Under else...condition</p>
-        </ng-template>
-        </div>
-
-        <h4 id="two">{{titles.elseIfElse}}</h4>
-        <hr />
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod asperiores unde illo labore, neque rerum. Dignissimos cum voluptatum expedita recusandae ullam suscipit ipsam in perferendis porro error autem nulla consequuntur delectus ipsa sint magnam voluptate asperiores excepturi dolor, nisi perspiciatis? Consequatur doloremque laudantium facere quae impedit nemo deleniti in delectus recusandae enim neque officia molestiae voluptatibus sed ad, maxime ratione? Fugit reprehenderit iusto voluptates, facilis, impedit delectus quis eum praesentium, expedita qui hic fuga neque nobis. Et ad necessitatibus illum blanditiis suscipit excepturi nobis autem ipsam nulla laboriosam quasi fugiat aliquid quas dolorem, fugit accusantium eaque ex neque atque ea!</p>
-
-        <h4 id="three">{{titles.switchCase}}</h4>
-        <hr />
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod asperiores unde illo labore, neque rerum. Dignissimos cum voluptatum expedita recusandae ullam suscipit ipsam in perferendis porro error autem nulla consequuntur delectus ipsa sint magnam voluptate asperiores excepturi dolor, nisi perspiciatis? Consequatur doloremque laudantium facere quae impedit nemo deleniti in delectus recusandae enim neque officia molestiae voluptatibus sed ad, maxime ratione? Fugit reprehenderit iusto voluptates, facilis, impedit delectus quis eum praesentium, expedita qui hic fuga neque nobis. Et ad necessitatibus illum blanditiis suscipit excepturi nobis autem ipsam nulla laboriosam quasi fugiat aliquid quas dolorem, fugit accusantium eaque ex neque atque ea!</p>
-
-        <h4 id="four">{{titles.ngFor}}</h4>
-        <hr />
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eum quod autem temporibus, voluptatem doloribus optio alias deleniti aperiam architecto sit rem accusamus voluptas eius facilis! Aperiam, vitae laboriosam ullam doloremque iure ut ipsam blanditiis aliquid non sunt quae voluptatem hic nisi cum. Nulla, incidunt harum perferendis provident ad odit perspiciatis quis accusamus maiores nam saepe at necessitatibus temporibus corrupti in voluptas, aut fugit quod rerum est minima esse iste! Mollitia modi officia temporibus repellat praesentium reiciendis quam officiis magnam perspiciatis nulla nobis tenetur nesciunt reprehenderit autem deserunt animi sed a quae, earum quasi! Expedita nisi nemo accusamus nesciunt ipsum!</p>
-
-        <h4 id="five">{{titles.nestedLoop}}</h4>
-        <hr />
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eum quod autem temporibus, voluptatem doloribus optio alias deleniti aperiam architecto sit rem accusamus voluptas eius facilis! Aperiam, vitae laboriosam ullam doloremque iure ut ipsam blanditiis aliquid non sunt quae voluptatem hic nisi cum. Nulla, incidunt harum perferendis provident ad odit perspiciatis quis accusamus maiores nam saepe at necessitatibus temporibus corrupti in voluptas, aut fugit quod rerum est minima esse iste! Mollitia modi officia temporibus repellat praesentium reiciendis quam officiis magnam perspiciatis nulla nobis tenetur nesciunt reprehenderit autem deserunt animi sed a quae, earum quasi! Expedita nisi nemo accusamus nesciunt ipsum!</p>
+        <a class="nav-link active" id="one-tab" data-bs-toggle="pill" href="#one" role="tab" aria-controls="one"
+          aria-selected="true">{{titles.ifElse}}</a>
+        <a class="nav-link" id="two-tab" data-bs-toggle="pill" href="#two" role="tab" aria-controls="two"
+          aria-selected="false">{{titles.elseIfElse}}</a>
+        <a class="nav-link" id="three-tab" data-bs-toggle="pill" href="#three" role="tab" aria-controls="three"
+          aria-selected="false">{{titles.switchCase}}</a>
+        <a class="nav-link" id="four-tab" data-bs-toggle="pill" href="#four" role="tab" aria-controls="four"
+          aria-selected="false">{{titles.ngFor}}</a>
+        <a class="nav-link" id="five-tab" data-bs-toggle="pill" href="#five" role="tab" aria-controls="five"
+          aria-selected="false">{{titles.nestedLoop}}</a>
       </div>
+      <div class="tab-content" id="v-pills-tabContent">
+        <div class="tab-pane fade show active" id="one" role="tabpanel" aria-labelledby="one-tab">
+          <h4>{{titles.ifElse}}</h4>
+          <hr />
+          <strong>{{titles.syntax}}</strong>
+          <div class="container">
+            <p *ngIf="show; then ifBlock else elseBlock"><strong>Show Text</strong></p>
+
+            <ng-template #ifBlock>
+              <p><strong>If Condition</strong></p>
+              <p>Uder if...condition</p>
+            </ng-template>
+
+            <ng-template #elseBlock>
+              <p><strong>Else Condition</strong></p>
+
+              <p>Under else...condition</p>
+            </ng-template>
+          </div>
+
+          <div class="tab-pane fade" id="two" role="tabpanel" aria-labelledby="two-tab">
+            <h4>{{titles.elseIfElse}}</h4>
+            <hr />
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod asperiores unde illo labore, neque rerum.
+              Dignissimos cum voluptatum expedita recusandae ullam suscipit ipsam in perferendis porro error autem nulla
+              consequuntur delectus ipsa sint magnam voluptate asperiores excepturi dolor, nisi perspiciatis?
+              Consequatur doloremque laudantium facere quae impedit nemo deleniti in delectus recusandae enim neque
+              officia molestiae voluptatibus sed ad, maxime ratione? Fugit reprehenderit iusto voluptates, facilis,
+              impedit delectus quis eum praesentium, expedita qui hic fuga neque nobis. Et ad necessitatibus illum
+              blanditiis suscipit excepturi nobis autem ipsam nulla laboriosam quasi fugiat aliquid quas dolorem, fugit
+              accusantium eaque ex neque atque ea!</p>
+          </div>
+
+          <div class="tab-pane fade" id="three" role="tabpanel" aria-labelledby="three-tab">
+            <h4>{{titles.ngFor}}</h4>
+            <hr />
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eum quod autem temporibus, voluptatem
+              doloribus
+              optio alias deleniti aperiam architecto sit rem accusamus voluptas eius facilis! Aperiam, vitae laboriosam
+              ullam
+              doloremque iure ut ipsam blanditiis aliquid non sunt quae voluptatem hic nisi cum. Nulla, incidunt harum
+              perferendis provident ad odit perspiciatis quis accusamus maiores nam saepe at necessitatibus temporibus
+              corrupti in voluptas, aut fugit quod rerum est minima esse iste! Mollitia modi officia temporibus repellat
+              praesentium reiciendis quam officiis magnam perspiciatis nulla nobis tenetur nesciunt reprehenderit autem
+              deserunt animi sed a quae, earum quasi! Expedita nisi nemo accusamus nesciunt ipsum!</p>
+          </div>
+
+          <div class="tab-pane fade" id="four" role="tabpanel" aria-labelledby="four-tab">
+            <h4>{{titles.ngFor}}</h4>
+            <hr />
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eum quod autem temporibus, voluptatem
+              doloribus
+              optio alias deleniti aperiam architecto sit rem accusamus voluptas eius facilis! Aperiam, vitae laboriosam
+              ullam
+              doloremque iure ut ipsam blanditiis aliquid non sunt quae voluptatem hic nisi cum. Nulla, incidunt harum
+              perferendis provident ad odit perspiciatis quis accusamus maiores nam saepe at necessitatibus temporibus
+              corrupti in voluptas, aut fugit quod rerum est minima esse iste! Mollitia modi officia temporibus repellat
+              praesentium reiciendis quam officiis magnam perspiciatis nulla nobis tenetur nesciunt reprehenderit autem
+              deserunt animi sed a quae, earum quasi! Expedita nisi nemo accusamus nesciunt ipsum!</p>
+          </div>
+
+          <div class="tab-pane fade" id="five" role="tabpanel" aria-labelledby="five-tab">
+
+            <h4>{{titles.nestedLoop}}</h4>
+            <hr />
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eum quod autem temporibus, voluptatem
+              doloribus
+              optio alias deleniti aperiam architecto sit rem accusamus voluptas eius facilis! Aperiam, vitae laboriosam
+              ullam
+              doloremque iure ut ipsam blanditiis aliquid non sunt quae voluptatem hic nisi cum. Nulla, incidunt harum
+              perferendis provident ad odit perspiciatis quis accusamus maiores nam saepe at necessitatibus temporibus
+              corrupti in voluptas, aut fugit quod rerum est minima esse iste! Mollitia modi officia temporibus repellat
+              praesentium reiciendis quam officiis magnam perspiciatis nulla nobis tenetur nesciunt reprehenderit autem
+              deserunt animi sed a quae, earum quasi! Expedita nisi nemo accusamus nesciunt ipsum!</p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
     </div>
-    
-    <!-- END Card Body -->
+  </div>
+
+  <!-- END Card Body -->
