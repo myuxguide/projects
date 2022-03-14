@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ConceptsPagesComponent } from './concepts-pages.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { CLIcommandsComponent } from './clicommands/clicommands.component';
@@ -28,6 +28,7 @@ import { ConditionsComponent } from './conditions/conditions.component';
   imports: [
     CommonModule,
     FormsModule,
+    ReactiveFormsModule,
     ArchitectureModule
   ],
   exports: [

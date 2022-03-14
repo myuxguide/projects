@@ -8,6 +8,8 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './user/login/login.component';
 import { UserComponent } from './user/user.component';
+import { FormsGlobalComponent } from './forms/forms-global/forms-global.component';
+
 
 const routes: Routes = [
   {
@@ -40,8 +42,8 @@ const routes: Routes = [
     component: HelpComponent
   },
   {
-    path: "contact",
-    component: ContactComponent
+    path: "forms-global",
+    component: FormsGlobalComponent
   }
 ];
 

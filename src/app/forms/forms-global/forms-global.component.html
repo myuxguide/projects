@@ -1,0 +1,61 @@
+<div class="card w-100 shadow">
+    <div class="card-header bg-secondary text-white">
+        About {{titles.titleForms }}
+    </div>
+    <!-- END card-header -->
+
+    <div class="card-body">
+        <div class="d-flex align-items-start">
+            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+                <a class="nav-link active" id="one-tab" data-bs-toggle="pill" href="#one" role="tab" aria-controls="one"
+                    aria-selected="true">Basic {{ titles.titleForms }}</a>
+            </div>
+            <div class="tab-content w-100" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="one" role="tabpanel" aria-labelledby="one-tab">
+                    <h4>Basic {{ titles.titleForms }} with get the value</h4>
+                    <hr />
+                    <u><strong>{{titles.syntax}}</strong></u>
+                    <div class="container p-2">
+                        <form>
+                            <table class="table table-borderless">
+                                <tr>
+                                    <td>
+                                        <input class="form-control mb-2" type="text" name="user"
+                                            placeholder="Enter User Name" ngModel />
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <input class="form-control mb-2" type="text" name="email"
+                                            placeholder="Enter Email" ngModel />
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <input class="form-control mb-2" type="text" name="pw"
+                                            placeholder="Enter Password" ngModel />
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <button type="button" class="btn btn-outline-primary mb-2">Register</button>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <h5>User Data</h5>
+                            <ul>
+                                <li>{{userData.user}}</li>
+                                <li>{{userData.email}}</li>
+                                <li>{{userData.pw}}</li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
