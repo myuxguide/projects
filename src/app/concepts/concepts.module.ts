@@ -11,7 +11,7 @@ import { FormsComponent } from './actions/forms/forms.component';
 import { CounterComponent } from './actions/counter/counter.component';
 import { ArchitectureModule } from './architecture/architecture.module';
 import { ConditionsComponent } from './conditions/conditions.component';
-
+import { ApiCallComponent } from './api-call/api-call.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,8 @@ import { ConditionsComponent } from './conditions/conditions.component';
     EventsComponent,
     FormsComponent,
     CounterComponent,
-    ConditionsComponent
+    ConditionsComponent,
+    ApiCallComponent
   ],
   imports: [
     CommonModule,

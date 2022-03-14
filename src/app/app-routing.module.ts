@@ -4,11 +4,11 @@ import { AuthGuard } from './auth/auth.guard';
 import { ArchitectureComponent } from './concepts/architecture/architecture.component';
 import { ConceptsPagesComponent } from './concepts/concepts-pages.component';
 import { HelpComponent } from './pages/help/help.component';
-import { ContactComponent } from './pages/contact/contact.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './user/login/login.component';
 import { UserComponent } from './user/user.component';
 import { FormsGlobalComponent } from './forms/forms-global/forms-global.component';
+import { ApiCallComponent } from './concepts/api-call/api-call.component';
 
 
 const routes: Routes = [
@@ -44,6 +44,10 @@ const routes: Routes = [
   {
     path: "forms-global",
     component: FormsGlobalComponent
+  },
+  {
+    path: "api-call",
+    component: ApiCallComponent
   }
 ];
 
