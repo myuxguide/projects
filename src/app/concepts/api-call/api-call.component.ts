@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserDataService } from 'src/app/services/user-data.service';
 
 @Component({
   selector: 'app-api-call',
@@ -6,10 +7,33 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./api-call.component.css']
 })
 export class ApiCallComponent implements OnInit {
-
-  constructor() { }
+  tableHeadings ={
+    id: "ID",
+    name: "Name",
+    age: "Age",
+    email:"Email",
+    location: "Location",
+    state: "State",
+    country: "Country"
+  }
+  myUserHeadings: any
+  myUsers: any
+  
+  constructor(private userData:UserDataService, private userDataHeading: UserDataService) {
+    userDataHeading.userHeadings().subscribe((data)=>{
+      this.myUserHeadings=data 
+    })
+    
+    userData.users().subscribe((data)=>{      
+      this.myUsers=data       
+    })    
+  }
 
   ngOnInit(): void {
+  }
+
+  users(){
+    // return this.http.get(db.json)
   }
 
 }

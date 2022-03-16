@@ -1,9 +1,76 @@
 {
-    "posts":[
-       {
-            "id": 1,
-            "title": "json-server",
-            "author": "typicode"
-       }
-    ]
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "userHeadings":[
+    {
+      "id": 0,
+      "name": "Name",
+      "email": "Email",
+      "age": "Age",
+      "location": "Location",
+      "state": "State",
+      "country": "Country"
+    }
+  ],
+  "users": [
+    {
+      "id": 0,
+      "name": "Jimish Shah",
+      "email": "head@monkey.com",
+      "age": 44,
+      "location": "Pune",
+      "state": "MH",
+      "country": "INDIA"
+    },
+    {
+      "id": 1,
+      "name": "Mahek Shah",
+      "email": "#1@monkey.com",
+      "age": 23,
+      "location": "Mumbai",
+      "state": "MH",
+      "country": "INDIA"
+    },
+    {
+      "id": 2,
+      "name": "Raina Shah",
+      "email": "#2@monkey.com",
+      "age": 18,
+      "location": "Mumbai",
+      "state": "MH",
+      "country": "INDIA"
+    },
+    {
+      "id": 3,
+      "name": "Prisha Shah",
+      "email": "#3@monkey.com",
+      "age": 15,
+      "location": "Pune",
+      "state": "MH",
+      "country": "INDIA"
+    },
+    {
+      "id": 4,
+      "name": "Maaesha Shah",
+      "email": "#4@monkey.com",
+      "age": 10,
+      "location": "Mumbai",
+      "state": "MH",
+      "country": "INDIA"
+    },
+    {
+      "id": 5,
+      "name": "Twisha Shah",
+      "email": "#5@monkey.com",
+      "age": 10,
+      "location": "Mumbai",
+      "state": "MH",
+      "country": "INDIA"
+    }
+  ]
 }

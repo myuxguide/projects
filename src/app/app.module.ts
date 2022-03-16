@@ -4,6 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { ConceptsModule } from './concepts/concepts.module';
 
+import { HttpClientModule } from '@angular/common/http';
+
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HelpComponent } from './pages/help/help.component';
@@ -28,7 +31,8 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    ConceptsModule
+    ConceptsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

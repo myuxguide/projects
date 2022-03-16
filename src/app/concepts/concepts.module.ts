@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ConceptsPagesComponent } from './concepts-pages.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
@@ -29,6 +30,7 @@ import { ApiCallComponent } from './api-call/api-call.component';
   imports: [
     CommonModule,
     FormsModule,
+    HttpClientModule,
     ReactiveFormsModule,
     ArchitectureModule
   ],

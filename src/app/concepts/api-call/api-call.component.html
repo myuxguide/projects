@@ -1,1 +1,22 @@
-<p>api-call works!</p>
+<div class="container py-3 px-0">
+    <table class="table">
+        <tr *ngFor="l;et userHeading of myUserHeadings">
+            <th>{{myUserHeadings.id}}</th>
+            <th>{{myUserHeadings.name}}</th>
+            <th>{{myUserHeadings.age}}</th>
+            <th>{{myUserHeadings.email}}</th>
+            <th>{{myUserHeadings.location}}</th>
+            <th>{{myUserHeadings.state}}</th>
+            <th>{{myUserHeadings.country}}</th>
+        </tr>
+        <tr *ngFor="let user of myUsers">
+            <td>{{user.id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.age}}</td>
+            <td>{{user.email}}</td>            
+            <td>{{user.location}}</td>
+            <td>{{user.state}}</td>
+            <td>{{user.country}}</td>
+        </tr>
+    </table>
+</div>

@@ -12,9 +12,13 @@ import { ApiCallComponent } from './concepts/api-call/api-call.component';
 
 
 const routes: Routes = [
+  // {
+  //   path: "",
+  //   component: ConceptsPagesComponent
+  // },
   {
     path: "",
-    component: ConceptsPagesComponent
+    component: ApiCallComponent
   },
   {
     path: "concepts",

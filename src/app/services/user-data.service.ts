@@ -1,30 +1,21 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserDataService {
+  apiUrlHeadings = "http://localhost:3000/userHeadings";
+  apiUrl = "http://localhost:3000/users";
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
-  users(){
-    return [
-      {
-        name:'Jimish',
-        age: 28,
-        email: 'jimish@test.com'
-      },
-      {
-        name:'Prisha',
-        age: 15,
-        email: 'prisha@test.com'
-      },
-      {
-        name:'Rupal',
-        age: 29,
-        email: 'rupal@test.com'
-      }
-    ]
+  userHeadings(){
+    return this.http.get(this.apiUrlHeadings)
   }
 
+  users() {
+    return this.http.get(this.apiUrl)
+  }
 }
