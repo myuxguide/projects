@@ -1,23 +1,25 @@
 <div class="container py-3 px-0">
-  <h3>{{ titles.pageTitle }}</h3>
+  <h3>{{ pageTitle }}</h3>
   
   <hr />
   
   <div class="d-flex align-items-start">
       <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-        <a class="nav-link" id="v-pills-interpolation-tab" data-bs-toggle="pill" href="#v-pills-interpolation" role="tab" aria-controls="v-pills-interpolation" aria-selected="true">{{titles.interpolate}}</a>
+        <a *ngFor="let navs of conceptNavs" class="nav-link" id="v-pills-interpolation-tab" data-bs-toggle="pill" href="#v-pills-interpolation" role="tab" aria-controls="v-pills-interpolation" aria-selected="true">{{navs.conceptNavs}}</a>
+<!-- 
+        <a class="nav-link" id="v-pills-interpolation-tab" data-bs-toggle="pill" href="#v-pills-interpolation" role="tab" aria-controls="v-pills-interpolation" aria-selected="true">{{conceptNavs.interpolate}}</a>
 
-        <a class="nav-link" id="v-pills-cli-tab" data-bs-toggle="pill" href="#v-pills-cli" role="tab" aria-controls="v-pills-cli" aria-selected="false">{{titles.cli}}</a>
+        <a class="nav-link" id="v-pills-cli-tab" data-bs-toggle="pill" href="#v-pills-cli" role="tab" aria-controls="v-pills-cli" aria-selected="false">{{conceptNavs.cli}}</a>
 
-        <a class="nav-link" id="v-pills-fuctions-tab" data-bs-toggle="pill" href="#v-pills-functions" role="tab" aria-controls="v-pills-fuctions" aria-selected="false">{{titles.function}}</a>
+        <a class="nav-link" id="v-pills-fuctions-tab" data-bs-toggle="pill" href="#v-pills-functions" role="tab" aria-controls="v-pills-fuctions" aria-selected="false">{{conceptNavs.function}}</a>
 
-        <a class="nav-link" id="v-pills-actions-tab" data-bs-toggle="pill" href="#v-pills-actions" role="tab" aria-controls="v-pills-actions" aria-selected="false">{{titles.actions}}</a>
+        <a class="nav-link" id="v-pills-actions-tab" data-bs-toggle="pill" href="#v-pills-actions" role="tab" aria-controls="v-pills-actions" aria-selected="false">{{conceptNavs.actions}}</a>
 
-        <a class="nav-link" id="v-pills-forms-tab" data-bs-toggle="pill" href="#v-pills-forms" role="tab" aria-controls="v-pills-forms" aria-selected="false">{{titles.forms}}</a>
+        <a class="nav-link" id="v-pills-forms-tab" data-bs-toggle="pill" href="#v-pills-forms" role="tab" aria-controls="v-pills-forms" aria-selected="false">{{conceptNavs.forms}}</a>
 
-        <a class="nav-link" id="v-pills-counters-tab" data-bs-toggle="pill" href="#v-pills-counters" role="tab" aria-controls="v-pills-counters" aria-selected="false">{{titles.counter}}</a>
+        <a class="nav-link" id="v-pills-counters-tab" data-bs-toggle="pill" href="#v-pills-counters" role="tab" aria-controls="v-pills-counters" aria-selected="false">{{conceptNavs.counter}}</a>
 
-        <a class="nav-link active" id="v-pills-conditions-tab" data-bs-toggle="pill" href="#v-pills-conditions" role="tab" aria-controls="v-pills-conditions" aria-selected="false">{{titles.conditions}}</a>
+        <a class="nav-link active" id="v-pills-conditions-tab" data-bs-toggle="pill" href="#v-pills-conditions" role="tab" aria-controls="v-pills-conditions" aria-selected="false">{{conceptNavs.conditions}}</a> -->
 
       </div>
       <div class="tab-content w-100" id="v-pills-tabContent">

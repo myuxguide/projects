@@ -7,21 +7,21 @@ import { UserDataService } from 'src/app/services/user-data.service';
   styleUrls: ['./api-call.component.css']
 })
 export class ApiCallComponent implements OnInit {
-  tableHeadings ={
-    id: "ID",
-    name: "Name",
-    age: "Age",
-    email:"Email",
-    location: "Location",
-    state: "State",
-    country: "Country"
-  }
+  // tableHeadings ={
+  //   id: "ID",
+  //   name: "Name",
+  //   age: "Age",
+  //   email:"Email",
+  //   location: "Location",
+  //   state: "State",
+  //   country: "Country"
+  // }
   myUserHeadings: any
   myUsers: any
   
   constructor(private userData:UserDataService, private userDataHeading: UserDataService) {
-    userDataHeading.userHeadings().subscribe((data)=>{
-      this.myUserHeadings=data 
+    userDataHeading.userHeadings().subscribe((headingData)=>{
+      this.myUserHeadings=headingData
     })
     
     userData.users().subscribe((data)=>{      
@@ -31,9 +31,4 @@ export class ApiCallComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  users(){
-    // return this.http.get(db.json)
-  }
-
 }

@@ -8,13 +8,13 @@
   ],
   "userHeadings":[
     {
-      "id": 0,
-      "name": "Name",
-      "email": "Email",
-      "age": "Age",
-      "location": "Location",
-      "state": "State",
-      "country": "Country"
+      "ids": "ID",
+      "names": "Name",
+      "ages": "Age",
+      "emails": "Email",      
+      "locations": "Location",
+      "states": "State",
+      "countries": "Country"
     }
   ],
   "users": [
@@ -72,5 +72,35 @@
       "state": "MH",
       "country": "INDIA"
     }
-  ]
+  ],
+  "navBarLists" : [
+    {
+      "navName" : "Angular Concept",
+      "routerLink": "concepts"
+    },
+    {
+      "navName" : "Angular Architecture",
+      "routerLink": "architecture"
+    },
+    {
+      "navName" : "Basic Forms",
+      "routerLink": "forms-global"
+    },
+    {
+      "navName" : "API Call",
+      "routerLink": "api-call"
+    }
+  ],  
+    "conceptNavs":[
+      {        
+        "interpolate": "Interpolation",
+        "cli": "Angular CLI",
+        "module": "Modules",
+        "function": "Functions",
+        "actions": "Actions",
+        "forms": "Forms",
+        "counter": "Counters",
+        "conditions": "Conditions"
+      }
+    ] 
 }

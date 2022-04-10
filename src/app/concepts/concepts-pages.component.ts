@@ -1,29 +1,34 @@
 import { Component, OnInit } from '@angular/core';
+import { ConceptsService } from './services/concepts.service';
+
 
 @Component({
   selector: 'app-concepts-pages',
   templateUrl: './concepts-pages.component.html',
   styleUrls: ['./concepts-pages.component.css']
 })
+
 export class ConceptsPagesComponent implements OnInit {
+  pageTitle : any = "Angular Concepts"
+  conceptNavs:any;
   
-  
-  constructor() { }
+  constructor(private conceptNav: ConceptsService) {      
+  }
 
   ngOnInit(): void {
-  }
+    console.warn(conceptNavData);
+    
+    this.conceptNav.getConceptNavBar().subscribe((conceptNavData)=>{
+      this.conceptNavs=conceptNavData;
+  });
 
-  // Object Interpolation
-  titles ={
-    pageTitle : "Angular Concepts",
-    interpolate: "Interpolation",
-    cli: "Angular CLI",
-    module: "Modules",
-    function: "Functions",
-    actions: "Actions",
-    forms: "Forms",
-    counter: "Counters",
-    conditions: "Conditions"
-  }
+  
 
+  
+
+  }
+}
+
+function conceptNavData(conceptNavData: any) {
+  throw new Error('Function not implemented.');
 }

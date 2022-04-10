@@ -1,4 +1,6 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { NavBarService } from './services/nav-bar.service';
+
 
 @Component({
   selector: 'app-nav-bar',
@@ -6,24 +8,27 @@ import { Component, HostListener, OnInit } from '@angular/core';
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent implements OnInit {
-  titles={
-    pageTitle:"Angular 12",
-    navConcepts:"Angular Concepts",
-    navArchitecture: "Angular Architecture",
-    help:"Help",
-    // presentLink: "https://www.youtube.com/watch?v=rpl5yrt4nI4&list=PL8p2I9GklV45--5t7_N4lveUI6Y31vQ6C&index=17&ab_channel=CodeStepByStep"
-    presentLink: "https://www.youtube.com/watch?v=wr7Okwfew-M&list=PL8p2I9GklV45--5t7_N4lveUI6Y31vQ6C&index=48"
-  }
-  constructor() { }
+  navBarLists:any;
+
+  constructor(private navs:NavBarService){}
 
   ngOnInit(): void {
+    this.navs.getNavBarData().subscribe((navData)=>{
+      this.navBarLists=navData        
+    })
+
     if (sessionStorage.getItem("active")) {
       const youractivetbavariable = sessionStorage.getItem("active");
     }
   }
+  navList:any;
+
+  titles={
+    pageTitle:"Angular 12",
+    help:"Help",
+    presentLink: "https://www.youtube.com/watch?v=wr7Okwfew-M&list=PL8p2I9GklV45--5t7_N4lveUI6Y31vQ6C&index=48"
+  }
 
 }
-function constunloadNotification($event: any, any: any) {
-  throw new Error('Function not implemented.');
-}
+
 
