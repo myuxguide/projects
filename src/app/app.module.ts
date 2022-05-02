@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 // Custom Modules & Component
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -48,6 +49,7 @@ import { CounterComponent } from './concepts/counter/counter.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FontAwesomeModule,
     UsersModule,
     AngularArchitectureModule,
     CypressPractModule,
