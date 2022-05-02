@@ -5,8 +5,10 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './module.component.html',
   styleUrls: ['./module.component.css']
 })
+
 export class ModuleComponent implements OnInit {
   title: string = "Module"
+  
   constructor() { }
 
   ngOnInit(): void {
