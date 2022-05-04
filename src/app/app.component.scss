@@ -1,5 +1,7 @@
 /* BS Menu CSS */
 /* ============ desktop view ============ */
+.dropdown-menu > li:hover{ background-color: none }
+.dropdown-menu > li:hover > .submenu{ display: none;}
 @media all and (min-width: 992px) {
 	.dropdown-menu li{ position: relative; 	}
 	.nav-item .submenu{ 
@@ -10,8 +12,8 @@
 	.nav-item .submenu-left{ 
 		right:100%; left:auto;
 	}
-	.dropdown-menu > li:hover{ background-color: #f1f1f1 }
-	.dropdown-menu > li:hover > .submenu{ display: block; }
+	// .dropdown-menu > li:hover{ background-color: #f1f1f1 }
+	// .dropdown-menu > li:hover > .submenu{ display: block; }
 }	
 /* ============ desktop view .end// ============ */
 

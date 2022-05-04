@@ -26,20 +26,4 @@ export class AppComponent {
       "routes":"dashboard"
     }
   ]
-
-  "nestedMenus" = [
-    {
-      "id": "dropDownOne",
-      "labels":"Concepts",
-      "classes":"nav-item dropdown",
-      "linkClass":"dropdown-item text-white dropdown-toggle active",
-      "iconClass":"fa fa-solid fa-info-circle",
-      "routes":"",
-      "subMenus":[
-        {
-          "submenu":"Click Event"
-        }
-      ]
-    }
-  ]
 }
