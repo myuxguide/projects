@@ -2,8 +2,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">{{title}}</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
-        aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -12,39 +11,40 @@
           <li [class]="navs.classes" *ngFor="let navs of navLists">
             <a [class]="navs.linkClass" aria-current="page" [routerLink]="navs.routes"><i [class]="navs.iconClass"></i> {{navs.labels}}</a>
           </li>
-
-          <li class="nav-item dropdown" id="dropDownOne">
-            <a class="dropdown-item text-white dropdown-toggle active" href="#" id="dropDownOne" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">Concepts</a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+          <!-- <li [class]="nMenus.classes" [id]="nMenus.id" *ngFor="let nMenus of subCat">
+            <a [class]="nMenus.linkClass" href="#" [id]="nMenus.id" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">{{nMenus.labels}}</a>           
             <ul class="dropdown-menu bg-secondary">
-              <li><a class="dropdown-item text-white" aria-current="page" routerLink="click-events">Click Events</a>
-              <!-- <li><a class="dropdown-item text-white" aria-current="page" routerLink="click-events">Click Events</a>
-              </li>
-              <li><a class="dropdown-item text-white" routerLink="interpolation">Interpolation</a></li>
+              <li *ngFor="let sMenu of subCat">
+                <a [class]="sMenu.linkClass" aria-current="page" [routerLink]="sMenu.routes">{{sMenu.labels}}</a>
+              </li> -->
+              <!-- <li><a class="dropdown-item text-white" routerLink="interpolation">Interpolation</a></li>
               <li><a class="dropdown-item text-white" routerLink="routing-basics">Routing</a></li>
               <li><a class="dropdown-item text-white" routerLink="get-text-box-val">Input Text</a></li>
               <li><a class="dropdown-item text-white" routerLink="ng-if">Ng If</a></li>
               <li><a class="dropdown-item text-white" routerLink="ng-switch">Ng Switch</a></li>
-              <li><a class="dropdown-item text-white" routerLink="ng-for-loop">Ng For Loop</a></li>
+              <li><a class="dropdown-item text-white" routerLink="ng-for-loop">Ng For Loop</a></li> 
               <li><a class="dropdown-item text-white" routerLink="app-cli">Angular-CLI</a></li> -->
-              <li> <a class="dropdown-item text-white" href="#"> Architecture &raquo; </a>
+
+              <!-- <li> <a class="dropdown-item text-white" href="#"> Architecture &raquo; </a>
                 <ul class="submenu dropdown-menu bg-secondary">
                   <li><a class="dropdown-item text-white" routerLink="app-components">Components</a></li>
                   <li><a class="dropdown-item text-white" routerLink="app-module">Module</a></li>
                   <li><a class="dropdown-item text-white" routerLink="app-services">Services</a></li>
                 </ul>
-              </li>
-              <li>
+              </li> -->
+              <!-- <li>
                 <a class="dropdown-item text-white" routerLink="app-counter">Counter</a>
-              </li>
-            </ul>
-          </li>
-          <!-- END Concepts -->          
+              </li> -->
+            <!-- </ul>
+          </li>       
         </ul>
       </div>
-      <!-- navbar-collapse.// -->
     </div>
-    <!-- container-fluid.// -->
   </nav>
   <!-- END navBar  -->
   <router-outlet></router-outlet>
