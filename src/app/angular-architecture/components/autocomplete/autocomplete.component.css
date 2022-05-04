@@ -1,0 +1,8 @@
+a{
+    color: #333;
+}
+
+.searchBar:focus, .btn-search, .btn-search:hover, .btn-search:focus{
+    border: 1px solid #ced4da;    
+    box-shadow: none;
+}

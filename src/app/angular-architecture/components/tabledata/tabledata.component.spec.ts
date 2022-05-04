@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NgSwitchComponent } from './ng-switch.component';
+import { TabledataComponent } from './tabledata.component';
 
-describe('NgSwitchComponent', () => {
-  let component: NgSwitchComponent;
-  let fixture: ComponentFixture<NgSwitchComponent>;
+describe('TabledataComponent', () => {
+  let component: TabledataComponent;
+  let fixture: ComponentFixture<TabledataComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NgSwitchComponent ]
+      declarations: [ TabledataComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NgSwitchComponent);
+    fixture = TestBed.createComponent(TabledataComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

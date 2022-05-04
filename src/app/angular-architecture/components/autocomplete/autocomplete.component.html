@@ -1,0 +1,15 @@
+<div class="input-group" mwlTextInputHighlightContainer>
+    <input #searchBox mwlTextInputElement type="text" class="form-control border-end-0 searchBar" (input)="this.autoComplete = true" placeholder="Search" aria-label="Username" aria-describedby="input-group-button-right">
+    <button type="button" class="border bg-white px-3 btn-search" id="input-group-button-right">
+        <i class="fa fa-search" aria-hidden="true"></i>
+    </button>
+</div>
+
+<div class="autoComplete card bg-white border rounded rounded-3 shadow w-100" *ngIf="autoComplete">
+    <ul class="list-group list-group-flush">
+        <li *ngFor="let lists of autocompleteData" [class]="lists.classes">
+            <i [class]="lists.icons" aria-hidden='true'></i>
+            <a role="button" class="text ps-2 text-decoration-none">{{lists.info}}</a>
+        </li>
+    </ul>
+</div>
